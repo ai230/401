@@ -1,0 +1,30 @@
+Remember the main method signature: intmain(int argc, const char* argv[])
+
+- What is argc?
+argc is the number of command line arguments are passed to your program.
+
+- What is argv[]?
+argv is the array of command line arguments.
+
+- How to use argc and argv?
+- Provide an example
+//Main.c
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+    int i;
+    
+    printf("argc = %d\n", argc);
+    for (i = 0; i < argc; i++) {
+        printf("argv[%d] = %s\n", i, argv[i]);
+    }
+    return 0;
+}
+
+When you write  “./main abc def” on Terminal
+It execute like this
+argc = 3
+argv[0] = ./main
+argv[1] = abc
+argv[2] = def
