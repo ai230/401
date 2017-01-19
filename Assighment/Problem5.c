@@ -1,6 +1,6 @@
 //
 //  main.c
-//  Assignment2
+//  Problem5
 //
 //  Created by aiyamamoto on 2017-01-17.
 //  Copyright © 2017 CICCC. All rights reserved.
