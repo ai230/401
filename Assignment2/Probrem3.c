@@ -16,6 +16,7 @@ void printAveNums(int num1, int num2);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    srand((unsigned)(time(NULL)));
     long num = getRandInterval(10, 15);
     printf("The randum number is %ld\n", num);
     printNums(10, 20);
