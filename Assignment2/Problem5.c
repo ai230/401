@@ -12,17 +12,24 @@
 //***
 //**
 //*
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "time.h"
+
 unsigned getRandInterval(unsigned begin, unsigned end);
-void printPattern(long counter);
+void printPattern1(long counter);
+void printPattern2(long counter);
+void printPattern3(long counter);
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     srand((unsigned)(time(NULL)));
     long counter = getRandInterval(5, 10);
-    printPattern(counter);
+    printPattern1(counter);
+    printf("\n");
+    printPattern2(counter);
+    printf("\n");
+    printPattern3(counter);
     return 0;
 }
 
@@ -37,11 +44,38 @@ unsigned getRandInterval(unsigned begin, unsigned end)
     return(randVal % range) + begin;
 }
 
-void printPattern(long counter)
+//1
+void printPattern1(long counter)
 {
     printf("Counter = %ld\n", counter);
     for(long i = counter; i > 0; i--){
         for(int j = 0; j < i; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+//2
+void printPattern2(long counter)
+{
+    for(long i = 0; i < counter; i++){
+        for(int j = 0; j < i + 1; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+//3
+void printPattern3(long counter)
+{
+    long i,k;
+    for(i = counter; 0 <= i; i-=2){
+        for(int j = 0; j < (counter - i)-j; j++){
+            printf(" ");
+        }
+        for(k = 0; k <= i; k++){
             printf("*");
         }
         printf("\n");
