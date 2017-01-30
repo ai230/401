@@ -6,33 +6,14 @@
 //  Copyright © 2017 CICCC. All rights reserved.
 //
 
+// a) Write a function, which takes two same size arrays of float numbers and adds the corresponding elements of the array together and puts the result into another array and returns the resulting array.
+// b) What is the signature of the method?  -->float * addArrays(float*  array1, float* array2);
+// c) What is the return type of the method? -->float
+// d) How would you call the function inside your main function? Provide an example.-->result = addArrays(array1, array2);
+    
 #include <stdio.h>
-//float* returnArr(float* arr1,float* arr2);
-//
-//int main(int argc, const char * argv[]) {
-//    // insert code here...
-//
-//    float arr1[5] = {1.0,2.0,3.0,4.0,5.0};
-//    float arr2[5] = {6.0,7.0,8.0,9.0,10.0};
-//
-//    float* result;
-//    result = returnArr(arr1,arr2);
-//    for(int i = 0; i < 5; i++){
-//        printf("%f\n",result[i]);
-//    }
-//    return 0;
-//}
-//
-//float *returnArr(float* arr1,float* arr2){
-//    float* result1;
-//    for(int i = 0; i < 5; i++){
-//        result1[i] = arr1[i] + arr2[i];
-//    }
-//    return result1;
-//}
-#include <stdio.h>
-
 float * addArrays(float*  array1, float* array2);
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -42,7 +23,7 @@ int main(int argc, const char * argv[]) {
     
     float* result;
     
-    result = addArrays(array1, array2);;
+    result = addArrays(array1, array2);
     
     for(int i=0; i<10; i++)
     {
