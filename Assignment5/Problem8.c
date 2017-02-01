@@ -33,6 +33,7 @@ void findNum(int array[],int num){
             if(num == sum){
                 result = 1;
                 printf("find! array[%d]=%d + array[%d]=%d = %d\n",i,array[i],j,array[j],sum);
+                return;
             }
         }
     }
