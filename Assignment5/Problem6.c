@@ -31,8 +31,7 @@ int findNum(int arr[], int num){
     for(int i = 0; i < 5; i++){
         if(arr[i] == num){
             result = 1;
-        }else{
-            result = 0;
+            break;
         }
     }
     if(result == 1){
