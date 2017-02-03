@@ -9,34 +9,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void readFile(char* fileName);
-int main(int argc, const char * argv[])
+struct accounts
 {
-    char* fileName;
-    fileName = "/Users/yamamotoai/Documents/C/Project1/how to read textdata/Accounts.txt";
-    readFile(fileName);
-    return 0;
-}
-void readFile(char* fileName)
-{
-    FILE *fp;
-#include <stdio.h>
-#include <stdlib.h>
+    char* idNumber;
+    char* password;
+};
 
-void readFile(char* fileName);
-void readIdPass(char* AccountInfo);
+struct accounts* readFile(char* fileName);
 int main(int argc, const char * argv[])
 {
     char* fileName;
     fileName = "/Users/yamamotoai/Documents/C/Project1/how to read textdata/Accounts.txt";
-    readFile(fileName);
+    struct accounts* result = readFile(fileName);//only last one
+    printf("\n");
+    printf("result:%s\n",result->idNumber);
+    printf("result:%s\n",result->password);
     return 0;
 }
-void readFile(char* fileName)
+struct accounts* readFile(char* fileName)
 {
     FILE *fp;
     char AccountInfo[256];
     
+    char id[256];
+    char pw[256];
+    char idFind[] = "studentID:";
+    char pwFind[] = "Pass:";
+    
+    struct accounts student[10];
+    int strCountId = 0;
+    int strCountPw = 0;
+
     if ((fp = fopen(fileName, "r")) == NULL)
     {
         printf("file open error!!\n");
@@ -45,49 +48,52 @@ void readFile(char* fileName)
     while (fgets(AccountInfo,256,fp) != NULL)
     {
         printf("%s",AccountInfo);
-        readIdPass(AccountInfo);
+        if (strstr(AccountInfo,idFind) != NULL )//Look for a StudentID
+        {
+            int i = 0;
+            while(i == 0)
+            {
+                static int count = 0;
+                if(AccountInfo[count+13] == '\xe2')
+                {
+                    i=1;
+                    count = 0;
+                    printf("ID:%s\n",id);
+                    student[strCountId].idNumber = id;
+                    printf("student[%d].idNum:%s\n",strCountId,student[strCountPw].idNumber);
+                    strCountId++;
+                    break;
+                }
+                id[count] = AccountInfo[count+13];
+                count++;
+            }
+        }
+        if (strstr(AccountInfo,pwFind) != NULL )//Look for a Password
+        {
+            int i=0;
+            while(i==0)
+            {
+                static int count=0;
+                if(AccountInfo[count+8] == '\xe2')
+                {
+                    i=1;
+                    count = 0;
+                    printf("PW:%s\n",pw);
+                    student[strCountPw].password = pw;
+                    printf("student[%d].password:%s\n",strCountPw,student[strCountPw].password);
+                    strCountPw++;
+                    break;
+                }
+                pw[count] = AccountInfo[count+8];
+                count++;
+            }
+        }
     }
     fclose(fp);
+    return student;
 }
 
-void readIdPass(char* AccountInfo)
-{
-    char id[256];
-    char pw[256];
-    char idFind[] = "studentID:";
-    char pwFind[] = "Pass:";
-    if (strstr(AccountInfo,idFind) != NULL )//Look for a StudentID
-    {
-        int i=0;
-        while(i==0)
-        {
-            static int count = 0;
-            if(AccountInfo[count+13] == '\xe2')
-            {
-                i=1;
-                count = 0;
-                printf("ID:%s\n",id);
-                break;
-            }
-            id[count] = AccountInfo[count+13];
-            count++;
-        }
-    }
-    if (strstr(AccountInfo,pwFind) != NULL )//Look for a Password
-    {
-        int i=0;
-        while(i==0)
-        {
-            static int count=0;
-            if(AccountInfo[count+8] == '\xe2')
-            {
-                i=1;
-                count = 0;
-                    printf("PW:%s\n",pw);
-                break;
-            }
-            pw[count] = AccountInfo[count+8];
-            count++;
-        }
-    }
-}
+
+    
+
+
