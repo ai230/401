@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 #import "Drink.h"
-#import "Food.h"
-#import "Cloth.h"
-#import "Material.h"
 #import "ShoppingCart.h"
-#import "DrinkItemDetailsViewController.h"
-#import "FoodItemDetailsViewController.h"
-#import "ClothItemDetailsViewController.h"
+
+@protocol DrinkItemDetailsViewControllerDelegate
+
+@required
+//Method Call-back function
+- (void)drinkDidCreate:(Drink*)drink;
+@optional
+@end
 
 @interface DrinkItemDetailsViewController : UIViewController
 
@@ -25,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *drinkMadoInCountryTextField;
 @property (weak, nonatomic) IBOutlet UITextField *drinkSizeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *drinkDietTextField;
+@property (weak, nonatomic) id<DrinkItemDetailsViewControllerDelegate> delegate;
+@property (strong, nonatomic) Drink * drink;
 
 - (IBAction)addDrinkDetailsFromButton:(UIButton *)sender;
 - (IBAction)backPageFromButton:(UIButton *)sender;

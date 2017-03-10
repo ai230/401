@@ -7,9 +7,7 @@
 //
 
 #import "DrinkItemDetailsViewController.h"
-#import "ViewController.h"
-#import "Drink.h"
-#import "ShoppingCart.h"
+
 
 @interface DrinkItemDetailsViewController ()
 
@@ -21,13 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    Drink * drink = [[Drink alloc]init];
+    Drink * drink = [[Drink alloc]initWithProductID:self.drinkIDTextField.text.integerValue productName:self.drinkNameTextField.text productPrice:self.drinkPriceTextField.text.floatValue productMadeCountry:self.drinkMadoInCountryTextField.text productSize:self.drinkSizeTextField.text.integerValue isDrinkDiet:self.drinkDietTextField.text.boolValue];
     self.drink = drink;
-    NSMutableArray<Product*>* productsArray = [[NSMutableArray alloc]init];
-    ShoppingCart * shoppingcart = [[ShoppingCart alloc]initWithProductsArray:productsArray];
-    self.shoppingcart = shoppingcart;
     
-    DrinkItemDetailsViewController * drinkItemDetailsViewController = [[DrinkItemDetailsViewController alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,7 +47,10 @@
     self.drink.productMadeCountry = self.drinkMadoInCountryTextField.text;
     self.drink.productSize = self.drinkSizeTextField.text.integerValue;
     self.drink.isDrinkDiet = self.drinkDietTextField.text.boolValue;
-    [self.shoppingcart addPurchases:self.drink];
+    
+    [self.delegate drinkDidCreate:self.drink];
+    //Close this screen
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)backPageFromButton:(UIButton *)sender {

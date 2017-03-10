@@ -25,7 +25,7 @@
     [self.productsArray addObject:product];
 }
 
--(void)calculateTotalAmount
+- (float)calculateTotalAmount
 {
     float amount = 0.0;
     for(int i=0; i<self.productsArray.count; i++)
@@ -34,6 +34,7 @@
 
     }
     NSLog(@"Total Amount is %.2f",amount);
+    return amount;
 }
 
 -(void)printPurchaseNameItems

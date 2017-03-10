@@ -11,9 +11,10 @@
 
 @interface Material : Product
 
-@property (nonatomic)NSInteger MaterialCode;
-@property (strong, nonatomic)NSString * MaterialName;
+@property (nonatomic)NSInteger materialCode;
+@property (strong, nonatomic)NSString * materialName;
 
--(id)initWithMaterialCode:(NSInteger)MaterialCode MaterialName:(NSString*)MaterialName;
+- (id)initWithMaterialCode:(NSInteger)materialCode materialName:(NSString*)materialName;
 
+- (void)createMaterialObject:(Material*)materialCode materialName:(Material*)MaterialName;
 @end

@@ -17,7 +17,7 @@
 
 -(void)addPurchases:(Product*)product;
 
--(void)calculateTotalAmount;
+-(float)calculateTotalAmount;
 
 -(void)printPurchaseNameItems;
 

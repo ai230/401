@@ -8,15 +8,30 @@
 
 #import <UIKit/UIKit.h>
 #import "Product.h"
-#import "Drink.h"
 #import "Food.h"
-#import "Cloth.h"
-#import "Material.h"
 #import "ShoppingCart.h"
-#import "DrinkItemDetailsViewController.h"
-#import "FoodItemDetailsViewController.h"
-#import "ClothItemDetailsViewController.h"
+
+@protocol FoodItemDetailsViewControllerDelegate
+@required
+-(void)foodDidCreate:(Food*)food;
+@optional
+@end
 
 @interface FoodItemDetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *foodIDTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodPriceTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodMadeCountryTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodSizeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodCalorieTextField;
+@property (weak, nonatomic) IBOutlet UITextField *foodIngredientsTextField;
+
+@property (weak, nonatomic) id<FoodItemDetailsViewControllerDelegate> delegate;
+@property (strong, nonatomic) Food * food;
+@property (strong, nonatomic) NSString * foodIngredientsString;
+@property (strong, nonatomic) NSArray * foodIngredientsArray;
+
+- (IBAction)addFoodDetailsFromButton:(UIButton *)sender;
+- (IBAction)backPageFromButton:(UIButton *)sender;
 
 @end

@@ -10,15 +10,22 @@
 
 @implementation Material
 
--(id)initWithMaterialCode:(NSInteger) MaterialCode MaterialName:(NSString*)MaterialName
+-(id)initWithMaterialCode:(NSInteger) materialCode materialName:(NSString*)materialName
 {
     self = [super init];
     if(self)
     {
-        self.MaterialCode = MaterialCode;
-        self.MaterialName = MaterialName;
+        self.materialCode = materialCode;
+        self.materialName = materialName;
     }
     return self;
 }
 
+- (void)createMaterialObject:(Material*)materialCode materialName:(Material*)MaterialName
+{
+//    Material* material = [[Material alloc]init];
+//    material.materialCode = materialCode;
+//    material.materialName = MaterialName;
+    //return
+}
 @end

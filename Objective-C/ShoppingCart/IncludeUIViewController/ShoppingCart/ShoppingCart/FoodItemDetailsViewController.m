@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    Food * food = [[Food alloc]initWithProductID:self.foodIDTextField.text.integerValue productName:self.foodNameTextField.text productPrice:self.foodPriceTextField.text.floatValue productMadeCountry:self.foodMadeCountryTextField.text productSize:self.foodSizeTextField.text.integerValue foodCalorie:self.foodCalorieTextField.text.integerValue foodIngredients:self.foodIngredientsArray];
+    self.food = food;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +36,23 @@
 }
 */
 
+- (IBAction)addFoodDetailsFromButton:(UIButton *)sender {
+    self.food.productID = self.foodIDTextField.text.integerValue;
+    self.food.productName = self.foodNameTextField.text;
+    self.food.productPrice = self.foodPriceTextField.text.integerValue;
+    self.food.productMadeCountry = self.foodMadeCountryTextField.text;
+    self.food.productSize = self.foodSizeTextField.text.integerValue;
+    self.food.foodCalorie = self.foodCalorieTextField.text.integerValue;
+    self.food.foodIngredients = [self.foodIngredientsTextField.text componentsSeparatedByString:@","];
+    
+    self.food.productPrice = [self.food calculatePraicefromSize];
+    
+    [self.delegate foodDidCreate:self.food];
+    //Close this screen
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)backPageFromButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
