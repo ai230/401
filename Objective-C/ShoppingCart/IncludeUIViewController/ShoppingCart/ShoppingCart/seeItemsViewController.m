@@ -6,18 +6,17 @@
 //  Copyright © 2017 CICCC. All rights reserved.
 //
 
-#import "seeItemsViewController.h"
+#import "SeeItemsViewController.h"
 
-@interface seeItemsViewController ()
+@interface SeeItemsViewController ()
 
 @end
 
-@implementation seeItemsViewController
+@implementation SeeItemsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,27 +33,16 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    ((ViewController*)segue.destinationViewController).delegate = self;
-}
-
-- (void)itemsDidCreate:(ShoppingCart*)shoppingcart
-{
-    [shoppingcart printPurchaseNameItems];
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self itemsDidCreate:
-//    NSString * firstname = self.firstnameTextField.text;
-//    NSString * lastname = self.lastnameTextField.text;
-//    
-//    NSString * sentence = [[[@"Hello " stringByAppendingString:firstname] stringByAppendingString:@" "] stringByAppendingString:lastname];
-//    
-//    self.sentenceTextField.text = sentence;
+    NSMutableArray * productNameArray = [[NSMutableArray alloc]init];
+    productNameArray = [self.seedVCDelegate seeItemsDidCreate];
+    
+    self.seeItemsTextView.text = [productNameArray componentsJoinedByString:@","];
 }
+
 - (IBAction)closeButton:(UIButton *)sender {
-        [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

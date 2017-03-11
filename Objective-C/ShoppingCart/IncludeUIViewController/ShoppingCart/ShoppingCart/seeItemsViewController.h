@@ -7,13 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
 #import "Product.h"
+#import "Drink.h"
+#import "Food.h"
+#import "Cloth.h"
+#import "Material.h"
+#import "ShoppingCart.h"
 
-@interface seeItemsViewController : UIViewController<ViewControllerDelegate>
+@protocol SeeItemsVCDelegate
+
+@required
+//Method Call-back function
+- (NSMutableArray*)seeItemsDidCreate;
+@optional
+@end
+
+@interface SeeItemsViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextView *seeItemsTextView;
+@property (strong, nonatomic) NSMutableArray * productItemsArray;
+@property (weak, nonatomic) id<SeeItemsVCDelegate> seedVCDelegate;
 
 - (IBAction)closeButton:(UIButton *)sender;
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 - (void)viewWillAppear:(BOOL)animated;
 @end

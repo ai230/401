@@ -16,23 +16,16 @@
 #import "DrinkItemDetailsViewController.h"
 #import "FoodItemDetailsViewController.h"
 #import "ClothItemDetailsViewController.h"
-#import "ViewController.h"
+#import "SeeItemsViewController.h"
 
-@protocol ViewControllerDelegate
-
-@required
-//Method Call-back function
-- (void)itemsDidCreate:(ShoppingCart*)shoppingcart;
-@optional
-@end
-
-@interface ViewController : UIViewController<DrinkItemDetailsViewControllerDelegate, FoodItemDetailsViewControllerDelegate, ClothItemDetailsViewControllerDelegate>
+@interface ViewController : UIViewController<DrinkItemDetailsViewControllerDelegate, FoodItemDetailsViewControllerDelegate, ClothItemDetailsViewControllerDelegate,SeeItemsVCDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
 @property (strong, nonatomic) ShoppingCart * shoppingcart;
-@property (weak, nonatomic) id<ViewControllerDelegate> delegate;
+//@property (weak, nonatomic) id<ViewControllerDelegate> delegate;
+//- (IBAction)goToSeeItemsPage:(UIButton *)sender;
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 - (void)viewWillAppear:(BOOL)animated;
 @end
 

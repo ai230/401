@@ -41,7 +41,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Eq-vc-DUk" kind="presentation" id="ISl-wW-gYb"/>
+                                    <segue destination="8Eq-vc-DUk" kind="presentation" identifier="ClothSegue" id="ISl-wW-gYb"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drink.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mer-by-tFM">
@@ -57,7 +57,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w7D-VR-wc6" kind="presentation" id="GzX-mk-AMG"/>
+                                    <segue destination="w7D-VR-wc6" kind="presentation" identifier="DrinkSegue" id="GzX-mk-AMG"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food.png" translatesAutoresizingMaskIntoConstraints="NO" id="RFm-d0-ECf">
@@ -74,7 +74,7 @@
                                     <color key="titleShadowColor" red="1" green="0.32015581339999999" blue="0.53274817649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x4s-Kg-dSw" kind="presentation" id="peX-zg-gWw"/>
+                                    <segue destination="x4s-Kg-dSw" kind="presentation" identifier="FoodSegue" id="peX-zg-gWw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrC-5R-7e4" userLabel="TotalAmountLabel">
@@ -93,7 +93,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XRo-HM-uGh" kind="presentation" id="he1-ep-1Yz"/>
+                                    <segue destination="XRo-HM-uGh" kind="presentation" identifier="SeeItemsSegue" id="he1-ep-1Yz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,7 +254,7 @@
         <!--See Items View Controller-->
         <scene sceneID="TY3-46-hyh">
             <objects>
-                <viewController id="XRo-HM-uGh" customClass="seeItemsViewController" sceneMemberID="viewController">
+                <viewController id="XRo-HM-uGh" customClass="SeeItemsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w1D-Gp-d0j"/>
                         <viewControllerLayoutGuide type="bottom" id="1Db-R3-wlD"/>
@@ -287,7 +287,6 @@
                                 </state>
                                 <connections>
                                     <action selector="closeButton:" destination="XRo-HM-uGh" eventType="touchUpInside" id="bAi-Kd-ZrX"/>
-                                    <action selector="getPriceOfMyItems:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQH-u4-JU0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -299,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Twg-r2-ztU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698.39999999999998" y="563.56821589205401"/>
+            <point key="canvasLocation" x="-754" y="858"/>
         </scene>
         <!--ClothItemDetails View Controller-->
         <scene sceneID="BZQ-Ig-MtC">

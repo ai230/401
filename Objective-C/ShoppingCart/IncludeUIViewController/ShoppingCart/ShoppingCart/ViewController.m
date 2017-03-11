@@ -44,13 +44,40 @@
     [self.shoppingcart addPurchases:cloth];
 }
 
-
+- (NSMutableArray*)seeItemsDidCreate
+{
+    NSMutableArray * productNameArray = [[NSMutableArray alloc]init];
+    for(int i=0; i<self.shoppingcart.productsArray.count; i++)
+    {
+        NSLog(@"%@",self.shoppingcart.productsArray[i].productName);
+        productNameArray[i] = self.shoppingcart.productsArray[i].productName;
+    }
+    return productNameArray;
+}
 // For connect UIViewController and UIViewController
+//- (IBAction)goToSeeItemsPage:(UIButton *)sender {
+//    [self.delegate seeItemsDidCreate:self.shoppingcart];
+//}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    ((DrinkItemDetailsViewController*)segue.destinationViewController).delegate = self;
-    ((FoodItemDetailsViewController*)segue.destinationViewController).delegate = self;
-    ((ClothItemDetailsViewController*)segue.destinationViewController).delegate = self;
+    //compile error
+    if([[segue identifier] isEqualToString:@"DrinkSegue"])
+    {
+        ((DrinkItemDetailsViewController*)segue.destinationViewController).delegate = self;
+    }
+    else if([[segue identifier] isEqualToString:@"FoodSegue"])
+    {
+        ((FoodItemDetailsViewController*)segue.destinationViewController).delegate = self;
+    }
+    else if([[segue identifier] isEqualToString:@"ClothSegue"])
+    {
+        ((ClothItemDetailsViewController*)segue.destinationViewController).delegate = self;
+    }
+    else if([[segue identifier] isEqualToString:@"SeeItemsSegue"])
+    {
+        ((SeeItemsViewController*)segue.destinationViewController).seedVCDelegate = self;
+    }
 }
 
 //Do it when the screen appear
