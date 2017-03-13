@@ -25,6 +25,7 @@
 		41A331BB1E6FED4B00CCD409 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A331BA1E6FED4B00CCD409 /* food.png */; };
 		41A331BD1E6FEED600CCD409 /* cloth.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A331BC1E6FEED600CCD409 /* cloth.png */; };
 		41A331BF1E6FEF1800CCD409 /* drink.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A331BE1E6FEF1800CCD409 /* drink.png */; };
+		41F7DC2E1E763FB600D3F497 /* SeeItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC2D1E763FB600D3F497 /* SeeItemsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		41A331BA1E6FED4B00CCD409 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = ../../img/food.png; sourceTree = "<group>"; };
 		41A331BC1E6FEED600CCD409 /* cloth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloth.png; path = ../../img/cloth.png; sourceTree = "<group>"; };
 		41A331BE1E6FEF1800CCD409 /* drink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drink.png; path = ../../img/drink.png; sourceTree = "<group>"; };
+		41F7DC2C1E763FB600D3F497 /* SeeItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeItemsViewController.h; sourceTree = "<group>"; };
+		41F7DC2D1E763FB600D3F497 /* SeeItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeItemsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +96,6 @@
 			children = (
 				41A331861E6FB71500CCD409 /* AppDelegate.h */,
 				41A331871E6FB71500CCD409 /* AppDelegate.m */,
-				41A331891E6FB71500CCD409 /* ViewController.h */,
-				41A3318A1E6FB71500CCD409 /* ViewController.m */,
-				41A331AC1E6FC28D00CCD409 /* Product */,
 				41A331A01E6FB79800CCD409 /* Material.h */,
 				41A331A11E6FB79800CCD409 /* Material.m */,
 				41A331A41E6FB79800CCD409 /* ShoppingCart.h */,
@@ -107,13 +107,9 @@
 				41A331BA1E6FED4B00CCD409 /* food.png */,
 				41A331911E6FB71500CCD409 /* LaunchScreen.storyboard */,
 				41A331941E6FB71500CCD409 /* Info.plist */,
+				41A331AC1E6FC28D00CCD409 /* Product */,
 				41A331831E6FB71500CCD409 /* Supporting Files */,
-				41A331AD1E6FC71400CCD409 /* DrinkItemDetailsViewController.h */,
-				41A331AE1E6FC71400CCD409 /* DrinkItemDetailsViewController.m */,
-				41A331B01E6FE14E00CCD409 /* FoodItemDetailsViewController.h */,
-				41A331B11E6FE14E00CCD409 /* FoodItemDetailsViewController.m */,
-				41A331B31E6FE16B00CCD409 /* ClothItemDetailsViewController.h */,
-				41A331B41E6FE16B00CCD409 /* ClothItemDetailsViewController.m */,
+				41F7DC2F1E76404700D3F497 /* ViewController */,
 			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
@@ -139,6 +135,23 @@
 				41A3319F1E6FB79800CCD409 /* Food.m */,
 			);
 			name = Product;
+			sourceTree = "<group>";
+		};
+		41F7DC2F1E76404700D3F497 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A331891E6FB71500CCD409 /* ViewController.h */,
+				41A3318A1E6FB71500CCD409 /* ViewController.m */,
+				41F7DC2C1E763FB600D3F497 /* SeeItemsViewController.h */,
+				41F7DC2D1E763FB600D3F497 /* SeeItemsViewController.m */,
+				41A331AD1E6FC71400CCD409 /* DrinkItemDetailsViewController.h */,
+				41A331AE1E6FC71400CCD409 /* DrinkItemDetailsViewController.m */,
+				41A331B01E6FE14E00CCD409 /* FoodItemDetailsViewController.h */,
+				41A331B11E6FE14E00CCD409 /* FoodItemDetailsViewController.m */,
+				41A331B31E6FE16B00CCD409 /* ClothItemDetailsViewController.h */,
+				41A331B41E6FE16B00CCD409 /* ClothItemDetailsViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				41A331B21E6FE14E00CCD409 /* FoodItemDetailsViewController.m in Sources */,
 				41A3318B1E6FB71500CCD409 /* ViewController.m in Sources */,
 				41A331A81E6FB79800CCD409 /* Food.m in Sources */,
+				41F7DC2E1E763FB600D3F497 /* SeeItemsViewController.m in Sources */,
 				41A331AB1E6FB79800CCD409 /* ShoppingCart.m in Sources */,
 				41A331AA1E6FB79800CCD409 /* Product.m in Sources */,
 				41A331881E6FB71500CCD409 /* AppDelegate.m in Sources */,

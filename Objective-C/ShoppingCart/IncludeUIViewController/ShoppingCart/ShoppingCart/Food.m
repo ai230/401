@@ -23,6 +23,10 @@
 
 -(float)calculatePraicefromSize
 {
+    if(self.productSize == 0)
+    {
+        self.productSize = 1;
+    }
     float foodPriceFromSize = self.productPrice * self.productSize;
     return foodPriceFromSize;
 }
