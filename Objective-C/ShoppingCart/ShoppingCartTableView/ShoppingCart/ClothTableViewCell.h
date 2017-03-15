@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ClothTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UITextField *clothTextField;
 
 @end

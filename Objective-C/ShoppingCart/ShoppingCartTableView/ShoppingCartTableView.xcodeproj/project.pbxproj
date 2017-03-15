@@ -103,6 +103,7 @@
 		41A331821E6FB71500CCD409 /* ShoppingCartTableView */ = {
 			isa = PBXGroup;
 			children = (
+				41F7DC341E76642C00D3F497 /* TableView */,
 				41A331861E6FB71500CCD409 /* AppDelegate.h */,
 				41A331871E6FB71500CCD409 /* AppDelegate.m */,
 				41A331A41E6FB79800CCD409 /* ShoppingCart.h */,
@@ -111,7 +112,6 @@
 				41A3318F1E6FB71500CCD409 /* Assets.xcassets */,
 				41A331911E6FB71500CCD409 /* LaunchScreen.storyboard */,
 				41A331941E6FB71500CCD409 /* Info.plist */,
-				41F7DC341E76642C00D3F497 /* TableView */,
 				41A331AC1E6FC28D00CCD409 /* Product */,
 				41A331831E6FB71500CCD409 /* Supporting Files */,
 			);
@@ -151,10 +151,6 @@
 				41F7DC601E778D9800D3F497 /* MainTableViewController.m */,
 				41F7DC621E778EEE00D3F497 /* MainTableViewCell.h */,
 				41F7DC631E778EEE00D3F497 /* MainTableViewCell.m */,
-				41F7DC381E766A5500D3F497 /* ItemListViewController.h */,
-				41F7DC391E766A5500D3F497 /* ItemListViewController.m */,
-				41F7DC311E76641D00D3F497 /* ItemsListTableViewCell.h */,
-				41F7DC321E76641D00D3F497 /* ItemsListTableViewCell.m */,
 				41F7DC6B1E77D32A00D3F497 /* ClothTableViewController.h */,
 				41F7DC6C1E77D32A00D3F497 /* ClothTableViewController.m */,
 				41F7DC6E1E77D33C00D3F497 /* ClothTableViewCell.h */,
@@ -167,6 +163,10 @@
 				41F7DC751E77D36A00D3F497 /* FoodTableViewController.m */,
 				41F7DC711E77D34900D3F497 /* FoodTableViewCell.h */,
 				41F7DC721E77D34900D3F497 /* FoodTableViewCell.m */,
+				41F7DC381E766A5500D3F497 /* ItemListViewController.h */,
+				41F7DC391E766A5500D3F497 /* ItemListViewController.m */,
+				41F7DC311E76641D00D3F497 /* ItemsListTableViewCell.h */,
+				41F7DC321E76641D00D3F497 /* ItemsListTableViewCell.m */,
 			);
 			name = TableView;
 			sourceTree = "<group>";

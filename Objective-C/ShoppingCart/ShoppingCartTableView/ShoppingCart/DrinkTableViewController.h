@@ -23,8 +23,8 @@
 
 @property (weak, nonatomic) id<DrinkTVCDelegate> drinkTVCDelegate;
 @property (strong, nonatomic) IBOutlet UITableView *drinkTableView;
-@property (strong, nonatomic) Drink * drink;
 
+@property (strong, nonatomic) Drink * drink;
 @property (weak, nonatomic) UITextField *drinkIDTextField;
 @property (weak, nonatomic) UITextField *drinkNameTextField;
 @property (weak, nonatomic) UITextField *drinkPriceTextField;

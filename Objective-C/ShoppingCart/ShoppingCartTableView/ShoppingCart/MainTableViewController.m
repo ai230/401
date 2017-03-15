@@ -21,11 +21,8 @@
     self.mainTableView.dataSource = self;
     
     NSMutableArray<Product*>* productsArray = [[NSMutableArray alloc]init];
-    
-    //Add all products an array
     ShoppingCart * shoppingcart = [[ShoppingCart alloc]initWithProductsArray:productsArray];
     self.shoppingcart = shoppingcart;
-    //[textView becomeFirstResponder];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -39,15 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-//#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
     return 3;
 }
 
@@ -80,7 +73,6 @@
         cell.mainImageView.image = [UIImage imageNamed:@"drink"];
         
         [cell.addButton addTarget:self action:@selector(selectDrinkPageSegueId) forControlEvents:UIControlEventTouchUpInside];
-
         return cell;
     }
     else
@@ -124,6 +116,7 @@
     return self.shoppingcart.productsArray;
 }
 
+//connect to cloth, drink, food and item list page from the main page
 - (void)selectClothPageSegueId
 {
     [self performSegueWithIdentifier:@"ClothSegueID" sender:self];
@@ -159,7 +152,6 @@
     {
         ((ItemListViewController*)segue.destinationViewController).itemListVCDelegate = self;
     }
-    
 }
 
 @end

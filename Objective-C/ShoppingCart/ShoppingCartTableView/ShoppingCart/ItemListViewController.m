@@ -31,23 +31,19 @@
     self.foodArray = [[NSMutableArray alloc]init];
     self.clothArray = [[NSMutableArray alloc]init];
 
-    //TODO get prductArray and find name of class, put in the array below
     for(int i = 0; i < productsArray.count; i++)
     {
         Product * product = [productsArray objectAtIndex:i];
         if([product isMemberOfClass:[Drink class]])
         {
-            //drinkArray[i] = productsArray[i].productName;
             [self.drinkArray addObject:product];
         }
         else if([product isMemberOfClass:[Food class]])
         {
-            //foodArray[i] = productsArray[i].productName;
             [self.foodArray addObject:product];
         }
         else if([product isMemberOfClass:[Cloth class]])
         {
-            //clothArray[i] = productsArray[i].productName;
             [self.clothArray addObject:product];
         }
     }
@@ -57,19 +53,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 3;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(section == 0)
@@ -86,15 +74,16 @@
     }
     return 0;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 80;
 }
+
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0)
     {
-        
         ItemsListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ClothTableViewID"];
         if(!cell)
         {

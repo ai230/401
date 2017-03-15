@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FoodTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UITextField *foodTextField;
 
 @end

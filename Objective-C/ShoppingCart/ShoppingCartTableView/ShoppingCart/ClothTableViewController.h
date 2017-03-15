@@ -22,18 +22,17 @@
 @end
 
 @interface ClothTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) id<ClothTVCDelegate> clothTVCDelegate;
 @property (strong, nonatomic) IBOutlet UITableView *clothTableView;
 
 @property (strong, nonatomic) Cloth * cloth;
-
 @property (weak, nonatomic) UITextField *clothIDTextField;
 @property (weak, nonatomic) UITextField *clothNameTextField;
 @property (weak, nonatomic) UITextField *clothPriceTextField;
 @property (weak, nonatomic) UITextField *clothMadeCountryTextField;
 @property (weak, nonatomic) UITextField *clothMaterialNameTextField;
 @property (weak, nonatomic) UITextField *clothMaterialCodeTextField;
-
 @property (strong, nonatomic) Material * material;
 @property (strong, nonatomic) NSMutableArray* clothMaterialArray;
 

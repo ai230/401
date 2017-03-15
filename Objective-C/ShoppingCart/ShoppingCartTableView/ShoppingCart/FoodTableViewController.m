@@ -28,8 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -157,7 +155,6 @@
     self.food.productSize = self.foodSizeTextField.text.integerValue;
     self.food.foodCalorie = self.foodCalorieTextField.text.integerValue;
     self.food.foodIngredients = [self.foodIngredientsTextField.text componentsSeparatedByString:@","];
-    
     self.food.productPrice = [self.food calculatePraicefromSize];
     
     //delegate call method

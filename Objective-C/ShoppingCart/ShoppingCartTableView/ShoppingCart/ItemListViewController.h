@@ -33,10 +33,10 @@
 @property (strong, nonatomic) NSMutableArray<Product*>* drinkArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* foodArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* clothArray;
-//@property (strong, nonatomic) NSMutableArray<Product*>* productArray;
 @property (strong, nonatomic) NSMutableArray * productItemsArray;
 @property (weak, nonatomic) id<itemListVCDelegate> itemListVCDelegate;
 
-- (IBAction)closeButton:(UIButton *)sender;
 - (void)viewWillAppear:(BOOL)animated;
+- (IBAction)closeButton:(UIButton *)sender;
+
 @end

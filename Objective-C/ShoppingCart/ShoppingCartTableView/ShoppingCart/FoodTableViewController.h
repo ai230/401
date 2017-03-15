@@ -19,6 +19,7 @@
 @end
 
 @interface FoodTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) id<FoodTVCDelegate> foodTVCDelegate;
 @property (strong, nonatomic) IBOutlet UITableView *foodTableView;
 
