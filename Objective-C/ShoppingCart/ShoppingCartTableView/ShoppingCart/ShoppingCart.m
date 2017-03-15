@@ -19,7 +19,6 @@
     return self;
 }
 
-
 -(void)addPurchases:(Product*)product
 {
     [self.productsArray addObject:product];

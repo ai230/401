@@ -50,7 +50,7 @@
             cell = [[FoodTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FoodTableViewID"];
         }
         //Step2 : Data Binding
-        cell.foodTextField.placeholder = @"FoodTableViewID";
+        cell.foodTextField.placeholder = @"FoodID";
         self.foodIDTextField = cell.foodTextField;
         return cell;
     }

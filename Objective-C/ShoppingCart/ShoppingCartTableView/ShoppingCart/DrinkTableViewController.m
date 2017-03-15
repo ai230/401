@@ -50,7 +50,7 @@
             cell = [[DrinkTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"DrinkTableViewID"];
         }
         //Step2 : Data Binding
-        cell.drinkTextField.placeholder = @"DrinkTableViewID";
+        cell.drinkTextField.placeholder = @"DrinkID";
         self.drinkIDTextField = cell.drinkTextField;
         return cell;
     }

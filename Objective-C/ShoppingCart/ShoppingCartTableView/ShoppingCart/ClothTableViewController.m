@@ -50,7 +50,7 @@
             cell = [[ClothTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ClothTableViewID"];
         }
         //Step2 : Data Binding
-        cell.clothTextField.placeholder = @"ClothTableViewID";
+        cell.clothTextField.placeholder = @"ClothID";
         self.clothIDTextField = cell.clothTextField;
         return cell;
     }
