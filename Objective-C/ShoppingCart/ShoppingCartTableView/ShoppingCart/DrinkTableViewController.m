@@ -138,7 +138,7 @@
 - (IBAction)addDrinkButton:(UIButton *)sender {
     self.drink.productID = self.drinkIDTextField.text.integerValue;
     self.drink.productName = self.drinkNameTextField.text;
-    self.drink.productPrice = self.drinkPriceTextField.text.integerValue;
+    self.drink.productPrice = self.drinkPriceTextField.text.floatValue;
     self.drink.productMadeCountry = self.drinkMadeCountryTextField.text;
     self.drink.productSize = self.drinkSizeTextField.text.integerValue;
     self.drink.isDrinkDiet = self.drinkDietTextField.text.boolValue;
