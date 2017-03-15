@@ -26,11 +26,10 @@
 
 @interface ItemListViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) id<itemListVCDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
-@property (strong, nonatomic) NSMutableArray<NSString*>* itemsForSection0;
-@property (strong, nonatomic) NSMutableArray<NSString*>* itemsForSection1;
-@property (strong, nonatomic) NSMutableArray<NSString*>* itemsForSection2;
+
 @property (strong, nonatomic) NSMutableArray<Product*>* drinkArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* foodArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* clothArray;

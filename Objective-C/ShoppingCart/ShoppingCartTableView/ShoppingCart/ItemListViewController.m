@@ -51,10 +51,6 @@
             [self.clothArray addObject:product];
         }
     }
-
-//    self.itemsForSection0 = [drinkArray mutableCopy];
-//    self.itemsForSection1 = [foodArray mutableCopy];
-//    self.itemsForSection2 = [clothArray mutableCopy];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -78,15 +74,15 @@
 {
     if(section == 0)
     {
-        return self.drinkArray.count;
+        return self.clothArray.count;
     }
     else if(section == 1)
     {
-        return self.foodArray.count;
+        return self.drinkArray.count;
     }
     else
     {
-        return self.clothArray.count;
+        return self.foodArray.count;
     }
     return 0;
 }
@@ -97,6 +93,21 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0)
+    {
+        
+        ItemsListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ClothTableViewID"];
+        if(!cell)
+        {
+            cell = [[ItemsListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ClothTableViewID"];
+        }
+        cell.clothImageCell.image = [UIImage imageNamed:@"cloth"];
+        cell.clothNameLabelCell.text = self.clothArray[indexPath.row].productName;
+        cell.clothAmountLabelCell.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.clothArray[indexPath.row].productPrice]];
+        cell.clothMadeCountryLabel.text = self.clothArray[indexPath.row].productMadeCountry;
+        
+        return cell;
+    }
+    else if(indexPath.section == 1)
     {
         //Step1 : Cell creation and Reuse
         ItemsListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"DrinkTableViewID"];
@@ -111,31 +122,16 @@
         cell.drinkAmountLabelCell.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.drinkArray[indexPath.row].productPrice]];
         return cell;
     }
-    else if(indexPath.section == 1)
+    else
     {
-        //Step1 : Cell creation and Reuse
         ItemsListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FoodTableViewID"];
-        //every time you have to check!
         if(!cell)
         {
             cell = [[ItemsListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FoodTableViewID"];
         }
-        //Step2 : Data Binding
         cell.foodImageCell.image = [UIImage imageNamed:@"food"];
         cell.foodNameLabelCell.text = self.foodArray[indexPath.row].productName;
         cell.foodAmountLabelCell.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.foodArray[indexPath.row].productPrice]];
-        return cell;
-    }
-    else
-    {
-        ItemsListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ClothTableViewID"];
-        if(!cell)
-        {
-            cell = [[ItemsListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ClothTableViewID"];
-        }
-        cell.clothImageCell.image = [UIImage imageNamed:@"cloth"];
-        cell.clothNameLabelCell.text = self.clothArray[indexPath.row].productName;
-        cell.clothAmountLabelCell.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.clothArray[indexPath.row].productPrice]];
         return cell;
     }
 }

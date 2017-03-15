@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *clothNameLabelCell;
 @property (weak, nonatomic) IBOutlet UIImageView *clothImageCell;
 @property (weak, nonatomic) IBOutlet UILabel *clothAmountLabelCell;
+@property (weak, nonatomic) IBOutlet UILabel *clothMadeCountryLabel;
+@property (weak, nonatomic) IBOutlet UIView *clothMaterialsLabel;
 @end
