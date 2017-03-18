@@ -57,7 +57,6 @@
         }
         //Step2 : Data Binding
         cell.mainImageView.image = [UIImage imageNamed:@"cloth"];
-        [cell.addButton addTarget:self action:@selector(selectClothPageSegueId) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     else if(indexPath.row == 1)
@@ -71,8 +70,6 @@
         }
         //Step2 : Data Binding
         cell.mainImageView.image = [UIImage imageNamed:@"drink"];
-        
-        [cell.addButton addTarget:self action:@selector(selectDrinkPageSegueId) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     else
@@ -86,14 +83,43 @@
         }
         //Step2 : Data Binding
         cell.mainImageView.image = [UIImage imageNamed:@"food"];
-        [cell.addButton addTarget:self action:@selector(selectFoodPageSegueId) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 190;
+    return 170;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    if(indexPath.row==0) //cloth
+    {
+        ClothTableViewController* viewController=  (ClothTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ClothTableViewControllerID"];
+        
+        viewController.clothTVCDelegate = self;
+        
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    else if(indexPath.row==1)
+    {
+        DrinkTableViewController* viewController=  (DrinkTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"DrinkTableViewControllerID"];
+        
+        viewController.drinkTVCDelegate = self;
+        
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    else if(indexPath.row==2)
+    {
+        FoodTableViewController* viewController=  (FoodTableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"FoodTableViewControllerID"];
+        
+        viewController.foodTVCDelegate = self;
+        
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 - (void)clothDidCreate:(Cloth*)cloth
@@ -116,40 +142,33 @@
     return self.shoppingcart.productsArray;
 }
 
-//connect to cloth, drink, food and item list page from the main page
-- (void)selectClothPageSegueId
-{
-    [self performSegueWithIdentifier:@"ClothSegueID" sender:self];
-}
-- (void)selectDrinkPageSegueId
-{
-    [self performSegueWithIdentifier:@"DrinkSegueID" sender:self];
-}
-- (void)selectFoodPageSegueId
-{
-    [self performSegueWithIdentifier:@"FoodSegueID" sender:self];
-}
+////connect to cloth, drink, food and item list page from the main page
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"ClothSegueID"])
     {
-        ((ClothTableViewController*)segue.destinationViewController).clothTVCDelegate = self;
+        UIViewController* uvc = segue.destinationViewController;
+    
+        ((ClothTableViewController*)uvc).clothTVCDelegate = self;
+        
     }
     else if([[segue identifier] isEqualToString:@"DrinkSegueID"])
     {
-        ((DrinkTableViewController*)segue.destinationViewController).drinkTVCDelegate = self;
+        UIViewController* uvc = segue.destinationViewController;
+        
+        ((DrinkTableViewController*)uvc).drinkTVCDelegate = self;
     }
     else if([[segue identifier] isEqualToString:@"FoodSegueID"])
     {
-        ((FoodTableViewController*)segue.destinationViewController).foodTVCDelegate = self;
-    }
-    else if([[segue identifier] isEqualToString:@"ItemsListSegueID"])
-    {
-        ((ItemListViewController*)segue.destinationViewController).itemListVCDelegate = self;
+        UIViewController* uvc = segue.destinationViewController;
+        
+        ((FoodTableViewController*)uvc).foodTVCDelegate = self;
     }
     else if([[segue identifier] isEqualToString:@"ItemsListSegue"])
     {
-        ((ItemListViewController*)segue.destinationViewController).itemListVCDelegate = self;
+        UIViewController* uvc = segue.destinationViewController;
+        
+        ((ItemListViewController*)uvc).itemListVCDelegate = self;
     }
 }
 
