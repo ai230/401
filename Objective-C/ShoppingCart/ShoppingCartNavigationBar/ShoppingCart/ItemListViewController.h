@@ -32,7 +32,7 @@
 @property (strong, nonatomic) NSMutableArray<Product*>* drinkArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* foodArray;
 @property (strong, nonatomic) NSMutableArray<Product*>* clothArray;
-@property (strong, nonatomic) NSMutableArray * productItemsArray;
+//@property (strong, nonatomic) NSMutableArray * productItemsArray;
 @property (weak, nonatomic) id<itemListVCDelegate> itemListVCDelegate;
 
 - (void)viewWillAppear:(BOOL)animated;
