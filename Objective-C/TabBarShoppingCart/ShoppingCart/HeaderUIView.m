@@ -39,4 +39,8 @@
     //self.headerTitleLabel.text = @"Drink";
 }
 
+- (IBAction)closeKeyboard:(id)sender {
+    [self.contentView endEditing:YES];
+}
+
 @end

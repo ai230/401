@@ -86,6 +86,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Drink" id="lFM-Gd-uY7"/>
                     <connections>
+                        <outlet property="aaa" destination="eRZ-3q-yhq" id="MbP-KY-Hha"/>
                         <outlet property="drinkTableView" destination="eRZ-3q-yhq" id="foe-fa-uEh"/>
                     </connections>
                 </tableViewController>

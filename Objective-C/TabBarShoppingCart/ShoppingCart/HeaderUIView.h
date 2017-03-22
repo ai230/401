@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *headerTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
 
+- (IBAction)closeKeyboard:(id)sender;
+
 @end

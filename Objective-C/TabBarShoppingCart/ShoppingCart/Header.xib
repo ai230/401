@@ -24,6 +24,14 @@
                     <rect key="frame" x="158" y="21" width="59" height="58"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-sp-EGJ">
+                    <rect key="frame" x="256" y="63" width="112" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Close keyboard"/>
+                    <connections>
+                        <action selector="closeKeyboard:" destination="-1" eventType="touchUpInside" id="f5W-BQ-n76"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
