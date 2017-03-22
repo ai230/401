@@ -20,29 +20,15 @@
     //self.tabBarController.delegate = self;
     self.delegate = self;
     
-    //            MainViewController * mainViewController = [[MainViewController alloc]init];
-    //            [mainViewController showAmount];
-    
     NSMutableArray<Product*>* productsArray = [[NSMutableArray alloc]init];
     ShoppingCart * shoppingcart = [[ShoppingCart alloc]initWithProductsArray:productsArray];
     self.shoppingcart = shoppingcart;
-    
-    //    else if([viewController isMemberOfClass:[MainViewController class]]) {
-    //        ((MainViewController*)viewController).mainDelegate = self;
-    //    }
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
@@ -65,15 +51,7 @@
         [(ItemListUIViewController*)viewController  listDidSelect];
     }
 }
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 - (void)clothDidCreate:(Cloth*)cloth
 {
     [self.shoppingcart addPurchases:cloth];

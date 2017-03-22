@@ -38,7 +38,5 @@
 @property (strong, nonatomic) NSMutableArray<Product*>* productItemsArray;
 @property (weak, nonatomic) id<itemListVCDelegate> itemListVCDelegate;
 
-- (void)viewWillAppear:(BOOL)animated;
-//-(void)fakeData;
 -(void)listDidSelect;
 @end

@@ -10,10 +10,7 @@
 
 @implementation FooterUIView
 
-//- (void)viewDidLoad
-//{
-//    
-//}
+
 -(instancetype) initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -52,8 +49,6 @@
 }
 
 - (IBAction)doneButton:(id)sender {
-    //1
-    NSLog(@"tapped.");
     [self.FooterDelegate buttonWasPressed];
     //[self.FooterDelegate drinkDidCreate:self.drink];
     //[button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
