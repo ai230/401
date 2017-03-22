@@ -58,9 +58,6 @@
     return 75;
 }
 
-- (IBAction)closeKeyBoardButton:(UIButton *)sender {
-    [self.view endEditing:YES];
-}
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
@@ -91,10 +88,6 @@
 -(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 80;
-}
-
-- (IBAction)closeDrinkButton:(UIButton *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)buttonWasPressed {

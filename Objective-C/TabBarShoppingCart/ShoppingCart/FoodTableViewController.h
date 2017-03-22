@@ -29,6 +29,4 @@
 
 @property (strong, nonatomic) Food* food;
 
-- (IBAction)closeKeyBoardButton:(UIButton *)sender;
-
 @end

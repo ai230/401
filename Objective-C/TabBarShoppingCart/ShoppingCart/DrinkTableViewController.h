@@ -22,8 +22,8 @@
 
 @interface DrinkTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource, FooterDelegate>
 
-@property (weak, nonatomic) id<DrinkTVCDelegate> drinkTVCDelegate;
 @property (strong, nonatomic) IBOutlet UITableView *drinkTableView;
+@property (weak, nonatomic) id<DrinkTVCDelegate> drinkTVCDelegate;
 @property (strong, nonatomic) NSArray * tableViewIDArray;
 @property (strong, nonatomic) NSMutableArray<UITextField*>* cellTextFieldArray;
 @property (strong, nonatomic) Drink * drink;

@@ -31,6 +31,4 @@
 @property (strong, nonatomic) Cloth * cloth;
 @property (strong, nonatomic) NSMutableArray* clothMaterialArray;
 
-- (IBAction)closeKeyBoardButton:(UIButton *)sender;
-
 @end

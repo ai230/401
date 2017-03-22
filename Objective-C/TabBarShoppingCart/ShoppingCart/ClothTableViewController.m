@@ -80,21 +80,17 @@
 -(UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
-    
     FooterUIView* footerView = [[FooterUIView alloc] initWithFrame:frame];
-    
     //footerView.contentView.backgroundColor = [UIColor orangeColor];
     footerView.FooterDelegate = self;
+    
     return footerView;
     
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 80;
-}
-- (IBAction)closeKeyBoardButton:(UIButton *)sender {
-    [self.view endEditing:YES];
+    return 75;
 }
 
 - (void)buttonWasPressed {

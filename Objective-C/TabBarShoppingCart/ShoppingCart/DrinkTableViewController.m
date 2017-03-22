@@ -37,6 +37,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 6;
+    //self.tableViewIDArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,7 +59,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 75;
 }
 
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -89,10 +90,9 @@
     return 75;
 }
 
-
-- (IBAction)closeDrinkButton:(UIButton *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
+//- (IBAction)closeDrinkButton:(UIButton *)sender {
+//    [self.navigationController popViewControllerAnimated:YES];
+//}
 
 - (void)buttonWasPressed {
     if(![self.cellTextFieldArray[1].text isEqualToString: @""])
@@ -129,7 +129,7 @@
             }
         }
         [self.drinkTVCDelegate drinkDidCreate:self.drink];
-        //When add button is plessed input data in the text field will be deleted
+        //When add button is plessed input data will be deleted
         [self.drinkTableView reloadData];
     }
 }

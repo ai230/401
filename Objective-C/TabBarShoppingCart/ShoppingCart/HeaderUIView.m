@@ -40,7 +40,7 @@
 }
 
 - (IBAction)closeKeyboard:(id)sender {
-    [self.contentView endEditing:YES];
+    //[self.contentView endEditing:YES];
 }
 
 @end

@@ -84,7 +84,7 @@
     
     //headerView.headerImageView.image = [UIImage imageNamed:@"atomix_ecommerce"];
     
-    headerView.headerTitleLabel.text = @"Item List";
+    //headerView.headerTitleLabel.text = @"Item List";
     
     headerView.contentView.backgroundColor = [UIColor lightGrayColor];
     
