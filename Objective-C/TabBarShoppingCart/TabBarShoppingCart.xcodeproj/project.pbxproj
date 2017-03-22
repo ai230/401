@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		410AB68F1E7E0B6100E2563B /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410AB68E1E7E0B6100E2563B /* Header.xib */; };
-		410AB6911E7E0B6E00E2563B /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6901E7E0B6E00E2563B /* Footer.xib */; };
-		410AB6941E7E124100E2563B /* HeaderUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6931E7E124100E2563B /* HeaderUIView.m */; };
-		410AB6971E7E127700E2563B /* FooterUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6961E7E127700E2563B /* FooterUIView.m */; };
 		410AB69B1E7E1CEE00E2563B /* ItemListUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB69A1E7E1CEE00E2563B /* ItemListUIViewController.m */; };
-		410AB69E1E7E1F3500E2563B /* CustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB69D1E7E1F3500E2563B /* CustomUITableViewCell.m */; };
-		410AB6A11E7E245800E2563B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6A01E7E245800E2563B /* Item.m */; };
 		410AB6A41E7E391500E2563B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6A31E7E391500E2563B /* MainViewController.m */; };
-		410AB6A81E809A6000E2563B /* MyTabBarContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6A71E809A6000E2563B /* MyTabBarContoller.m */; };
+		410AB6B41E82192200E2563B /* CustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6AA1E82192200E2563B /* CustomUITableViewCell.m */; };
+		410AB6B51E82192200E2563B /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6AB1E82192200E2563B /* Footer.xib */; };
+		410AB6B61E82192200E2563B /* FooterUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6AD1E82192200E2563B /* FooterUIView.m */; };
+		410AB6B71E82192200E2563B /* HeaderUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6AF1E82192200E2563B /* HeaderUIView.m */; };
+		410AB6B81E82192200E2563B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6B11E82192200E2563B /* Item.m */; };
+		410AB6BD1E8219E800E2563B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6BB1E8219E800E2563B /* Base.lproj */; };
+		410AB6C81E821CF700E2563B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6C71E821CF700E2563B /* Assets.xcassets */; };
+		410AB6CB1E821DA800E2563B /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6CA1E821DA800E2563B /* MyTabBarController.m */; };
 		41A331851E6FB71500CCD409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331841E6FB71500CCD409 /* main.m */; };
 		41A331881E6FB71500CCD409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331871E6FB71500CCD409 /* AppDelegate.m */; };
 		41A3318E1E6FB71500CCD409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A3318C1E6FB71500CCD409 /* Main.storyboard */; };
-		41A331901E6FB71500CCD409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A3318F1E6FB71500CCD409 /* Assets.xcassets */; };
 		41A331931E6FB71500CCD409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A331911E6FB71500CCD409 /* LaunchScreen.storyboard */; };
 		41A331A61E6FB79800CCD409 /* Cloth.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A3319B1E6FB79800CCD409 /* Cloth.m */; };
 		41A331A71E6FB79800CCD409 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A3319D1E6FB79800CCD409 /* Drink.m */; };
@@ -40,27 +41,28 @@
 
 /* Begin PBXFileReference section */
 		410AB68E1E7E0B6100E2563B /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Header.xib; path = ShoppingCart/Header.xib; sourceTree = "<group>"; };
-		410AB6901E7E0B6E00E2563B /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
-		410AB6921E7E124100E2563B /* HeaderUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderUIView.h; sourceTree = "<group>"; };
-		410AB6931E7E124100E2563B /* HeaderUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderUIView.m; sourceTree = "<group>"; };
-		410AB6951E7E127700E2563B /* FooterUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterUIView.h; sourceTree = "<group>"; };
-		410AB6961E7E127700E2563B /* FooterUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterUIView.m; sourceTree = "<group>"; };
 		410AB6991E7E1CEE00E2563B /* ItemListUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemListUIViewController.h; path = ShoppingCart/ItemListUIViewController.h; sourceTree = "<group>"; };
 		410AB69A1E7E1CEE00E2563B /* ItemListUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemListUIViewController.m; path = ShoppingCart/ItemListUIViewController.m; sourceTree = "<group>"; };
-		410AB69C1E7E1F3500E2563B /* CustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewCell.h; sourceTree = "<group>"; };
-		410AB69D1E7E1F3500E2563B /* CustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewCell.m; sourceTree = "<group>"; };
-		410AB69F1E7E245800E2563B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		410AB6A01E7E245800E2563B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		410AB6A21E7E391500E2563B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ShoppingCart/MainViewController.h; sourceTree = "<group>"; };
 		410AB6A31E7E391500E2563B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ShoppingCart/MainViewController.m; sourceTree = "<group>"; };
-		410AB6A61E809A6000E2563B /* MyTabBarContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarContoller.h; sourceTree = "<group>"; };
-		410AB6A71E809A6000E2563B /* MyTabBarContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarContoller.m; sourceTree = "<group>"; };
+		410AB6A91E82192200E2563B /* CustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUITableViewCell.h; path = ShoppingCart/CustomUITableViewCell.h; sourceTree = "<group>"; };
+		410AB6AA1E82192200E2563B /* CustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomUITableViewCell.m; path = ShoppingCart/CustomUITableViewCell.m; sourceTree = "<group>"; };
+		410AB6AB1E82192200E2563B /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Footer.xib; path = ShoppingCart/Footer.xib; sourceTree = "<group>"; };
+		410AB6AC1E82192200E2563B /* FooterUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FooterUIView.h; path = ShoppingCart/FooterUIView.h; sourceTree = "<group>"; };
+		410AB6AD1E82192200E2563B /* FooterUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FooterUIView.m; path = ShoppingCart/FooterUIView.m; sourceTree = "<group>"; };
+		410AB6AE1E82192200E2563B /* HeaderUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderUIView.h; path = ShoppingCart/HeaderUIView.h; sourceTree = "<group>"; };
+		410AB6AF1E82192200E2563B /* HeaderUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderUIView.m; path = ShoppingCart/HeaderUIView.m; sourceTree = "<group>"; };
+		410AB6B01E82192200E2563B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ShoppingCart/Item.h; sourceTree = "<group>"; };
+		410AB6B11E82192200E2563B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ShoppingCart/Item.m; sourceTree = "<group>"; };
+		410AB6BB1E8219E800E2563B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = ShoppingCart/Base.lproj; sourceTree = "<group>"; };
+		410AB6C71E821CF700E2563B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShoppingCart/Assets.xcassets; sourceTree = "<group>"; };
+		410AB6C91E821DA800E2563B /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabBarController.h; path = ShoppingCart/MyTabBarController.h; sourceTree = "<group>"; };
+		410AB6CA1E821DA800E2563B /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTabBarController.m; path = ShoppingCart/MyTabBarController.m; sourceTree = "<group>"; };
 		41A331801E6FB71500CCD409 /* TabBarShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A331841E6FB71500CCD409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41A331861E6FB71500CCD409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41A331871E6FB71500CCD409 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41A3318D1E6FB71500CCD409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41A3318F1E6FB71500CCD409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A331921E6FB71500CCD409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A331941E6FB71500CCD409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A3319A1E6FB79800CCD409 /* Cloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloth.h; sourceTree = "<group>"; };
@@ -110,16 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				410AB6A51E7E43AB00E2563B /* ViewController */,
-				410AB69C1E7E1F3500E2563B /* CustomUITableViewCell.h */,
-				410AB69D1E7E1F3500E2563B /* CustomUITableViewCell.m */,
+				410AB6A91E82192200E2563B /* CustomUITableViewCell.h */,
+				410AB6AA1E82192200E2563B /* CustomUITableViewCell.m */,
+				410AB6AC1E82192200E2563B /* FooterUIView.h */,
+				410AB6AD1E82192200E2563B /* FooterUIView.m */,
+				410AB6AE1E82192200E2563B /* HeaderUIView.h */,
+				410AB6AF1E82192200E2563B /* HeaderUIView.m */,
+				410AB6B01E82192200E2563B /* Item.h */,
+				410AB6B11E82192200E2563B /* Item.m */,
+				410AB6C71E821CF700E2563B /* Assets.xcassets */,
+				410AB6BB1E8219E800E2563B /* Base.lproj */,
 				410AB68E1E7E0B6100E2563B /* Header.xib */,
-				410AB6901E7E0B6E00E2563B /* Footer.xib */,
-				410AB6921E7E124100E2563B /* HeaderUIView.h */,
-				410AB6931E7E124100E2563B /* HeaderUIView.m */,
-				410AB6951E7E127700E2563B /* FooterUIView.h */,
-				410AB6961E7E127700E2563B /* FooterUIView.m */,
-				410AB69F1E7E245800E2563B /* Item.h */,
-				410AB6A01E7E245800E2563B /* Item.m */,
+				410AB6AB1E82192200E2563B /* Footer.xib */,
 			);
 			name = NIB;
 			sourceTree = "<group>";
@@ -127,8 +131,8 @@
 		410AB6A51E7E43AB00E2563B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				410AB6A61E809A6000E2563B /* MyTabBarContoller.h */,
-				410AB6A71E809A6000E2563B /* MyTabBarContoller.m */,
+				410AB6C91E821DA800E2563B /* MyTabBarController.h */,
+				410AB6CA1E821DA800E2563B /* MyTabBarController.m */,
 				410AB6A21E7E391500E2563B /* MainViewController.h */,
 				410AB6A31E7E391500E2563B /* MainViewController.m */,
 				410AB6991E7E1CEE00E2563B /* ItemListUIViewController.h */,
@@ -173,7 +177,6 @@
 				41F7DC341E76642C00D3F497 /* TableView */,
 				41A331861E6FB71500CCD409 /* AppDelegate.h */,
 				41A331871E6FB71500CCD409 /* AppDelegate.m */,
-				41A3318F1E6FB71500CCD409 /* Assets.xcassets */,
 				41A331911E6FB71500CCD409 /* LaunchScreen.storyboard */,
 				41A331941E6FB71500CCD409 /* Info.plist */,
 				41A331AC1E6FC28D00CCD409 /* Product */,
@@ -282,10 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410AB6B51E82192200E2563B /* Footer.xib in Resources */,
+				410AB6BD1E8219E800E2563B /* Base.lproj in Resources */,
 				410AB68F1E7E0B6100E2563B /* Header.xib in Resources */,
-				410AB6911E7E0B6E00E2563B /* Footer.xib in Resources */,
 				41A331931E6FB71500CCD409 /* LaunchScreen.storyboard in Resources */,
-				41A331901E6FB71500CCD409 /* Assets.xcassets in Resources */,
+				410AB6C81E821CF700E2563B /* Assets.xcassets in Resources */,
 				41A3318E1E6FB71500CCD409 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,17 +302,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F7DC6A1E77C75E00D3F497 /* DrinkTableViewController.m in Sources */,
-				410AB69E1E7E1F3500E2563B /* CustomUITableViewCell.m in Sources */,
 				41F7DC6D1E77D32A00D3F497 /* ClothTableViewController.m in Sources */,
+				410AB6B61E82192200E2563B /* FooterUIView.m in Sources */,
+				410AB6B71E82192200E2563B /* HeaderUIView.m in Sources */,
 				410AB69B1E7E1CEE00E2563B /* ItemListUIViewController.m in Sources */,
+				410AB6CB1E821DA800E2563B /* MyTabBarController.m in Sources */,
 				41F7DC731E77D34900D3F497 /* FoodTableViewCell.m in Sources */,
 				41A331A61E6FB79800CCD409 /* Cloth.m in Sources */,
 				41F7DC671E77C74400D3F497 /* DrinkTableViewCell.m in Sources */,
 				41A331A91E6FB79800CCD409 /* Material.m in Sources */,
 				41A331A71E6FB79800CCD409 /* Drink.m in Sources */,
-				410AB6A81E809A6000E2563B /* MyTabBarContoller.m in Sources */,
+				410AB6B81E82192200E2563B /* Item.m in Sources */,
 				41A331A81E6FB79800CCD409 /* Food.m in Sources */,
-				410AB6971E7E127700E2563B /* FooterUIView.m in Sources */,
 				41F7DC331E76641D00D3F497 /* ItemsListTableViewCell.m in Sources */,
 				41F7DC641E778EEE00D3F497 /* MainTableViewCell.m in Sources */,
 				41F7DC701E77D33C00D3F497 /* ClothTableViewCell.m in Sources */,
@@ -318,9 +323,8 @@
 				41F7DC3A1E766A5500D3F497 /* ItemListViewController.m in Sources */,
 				410AB6A41E7E391500E2563B /* MainViewController.m in Sources */,
 				41F7DC761E77D36A00D3F497 /* FoodTableViewController.m in Sources */,
+				410AB6B41E82192200E2563B /* CustomUITableViewCell.m in Sources */,
 				41A331851E6FB71500CCD409 /* main.m in Sources */,
-				410AB6941E7E124100E2563B /* HeaderUIView.m in Sources */,
-				410AB6A11E7E245800E2563B /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

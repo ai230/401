@@ -6,7 +6,7 @@
 //  Copyright © 2017 CICCC. All rights reserved.
 //
 
-#import "MyTabBarContoller.h"
+#import "MyTabBarController.h"
 
 @interface MyTabBarContoller ()
 
@@ -20,22 +20,22 @@
     //self.tabBarController.delegate = self;
     self.delegate = self;
     
-//            MainViewController * mainViewController = [[MainViewController alloc]init];
-//            [mainViewController showAmount];
+    //            MainViewController * mainViewController = [[MainViewController alloc]init];
+    //            [mainViewController showAmount];
     
     NSMutableArray<Product*>* productsArray = [[NSMutableArray alloc]init];
     ShoppingCart * shoppingcart = [[ShoppingCart alloc]initWithProductsArray:productsArray];
     self.shoppingcart = shoppingcart;
     
-//    else if([viewController isMemberOfClass:[MainViewController class]]) {
-//        ((MainViewController*)viewController).mainDelegate = self;
-//    }
+    //    else if([viewController isMemberOfClass:[MainViewController class]]) {
+    //        ((MainViewController*)viewController).mainDelegate = self;
+    //    }
     
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,14 +66,14 @@
     }
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 - (void)clothDidCreate:(Cloth*)cloth
 {
     [self.shoppingcart addPurchases:cloth];
