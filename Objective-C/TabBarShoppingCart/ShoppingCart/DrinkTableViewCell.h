@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DrinkTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UITextField *drinkTextField;
 
 @end

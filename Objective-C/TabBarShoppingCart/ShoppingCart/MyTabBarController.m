@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //self.tabBarController.delegate = self;
     self.delegate = self;
     
     NSMutableArray<Product*>* productsArray = [[NSMutableArray alloc]init];

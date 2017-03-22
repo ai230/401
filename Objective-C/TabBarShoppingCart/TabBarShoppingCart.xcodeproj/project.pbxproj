@@ -14,7 +14,6 @@
 		410AB6B51E82192200E2563B /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6AB1E82192200E2563B /* Footer.xib */; };
 		410AB6B61E82192200E2563B /* FooterUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6AD1E82192200E2563B /* FooterUIView.m */; };
 		410AB6B71E82192200E2563B /* HeaderUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6AF1E82192200E2563B /* HeaderUIView.m */; };
-		410AB6B81E82192200E2563B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6B11E82192200E2563B /* Item.m */; };
 		410AB6BD1E8219E800E2563B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6BB1E8219E800E2563B /* Base.lproj */; };
 		410AB6C81E821CF700E2563B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6C71E821CF700E2563B /* Assets.xcassets */; };
 		410AB6CB1E821DA800E2563B /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6CA1E821DA800E2563B /* MyTabBarController.m */; };
@@ -28,9 +27,6 @@
 		41A331A91E6FB79800CCD409 /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331A11E6FB79800CCD409 /* Material.m */; };
 		41A331AA1E6FB79800CCD409 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331A31E6FB79800CCD409 /* Product.m */; };
 		41A331AB1E6FB79800CCD409 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331A51E6FB79800CCD409 /* ShoppingCart.m */; };
-		41F7DC331E76641D00D3F497 /* ItemsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC321E76641D00D3F497 /* ItemsListTableViewCell.m */; };
-		41F7DC3A1E766A5500D3F497 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC391E766A5500D3F497 /* ItemListViewController.m */; };
-		41F7DC641E778EEE00D3F497 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC631E778EEE00D3F497 /* MainTableViewCell.m */; };
 		41F7DC671E77C74400D3F497 /* DrinkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC661E77C74400D3F497 /* DrinkTableViewCell.m */; };
 		41F7DC6A1E77C75E00D3F497 /* DrinkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC691E77C75E00D3F497 /* DrinkTableViewController.m */; };
 		41F7DC6D1E77D32A00D3F497 /* ClothTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7DC6C1E77D32A00D3F497 /* ClothTableViewController.m */; };
@@ -52,12 +48,10 @@
 		410AB6AD1E82192200E2563B /* FooterUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FooterUIView.m; path = ShoppingCart/FooterUIView.m; sourceTree = "<group>"; };
 		410AB6AE1E82192200E2563B /* HeaderUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderUIView.h; path = ShoppingCart/HeaderUIView.h; sourceTree = "<group>"; };
 		410AB6AF1E82192200E2563B /* HeaderUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderUIView.m; path = ShoppingCart/HeaderUIView.m; sourceTree = "<group>"; };
-		410AB6B01E82192200E2563B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ShoppingCart/Item.h; sourceTree = "<group>"; };
-		410AB6B11E82192200E2563B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ShoppingCart/Item.m; sourceTree = "<group>"; };
 		410AB6BB1E8219E800E2563B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = ShoppingCart/Base.lproj; sourceTree = "<group>"; };
 		410AB6C71E821CF700E2563B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShoppingCart/Assets.xcassets; sourceTree = "<group>"; };
-		410AB6C91E821DA800E2563B /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabBarController.h; path = ShoppingCart/MyTabBarController.h; sourceTree = "<group>"; };
-		410AB6CA1E821DA800E2563B /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTabBarController.m; path = ShoppingCart/MyTabBarController.m; sourceTree = "<group>"; };
+		410AB6C91E821DA800E2563B /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		410AB6CA1E821DA800E2563B /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		41A331801E6FB71500CCD409 /* TabBarShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A331841E6FB71500CCD409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41A331861E6FB71500CCD409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,12 +71,6 @@
 		41A331A31E6FB79800CCD409 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		41A331A41E6FB79800CCD409 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
 		41A331A51E6FB79800CCD409 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
-		41F7DC311E76641D00D3F497 /* ItemsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListTableViewCell.h; sourceTree = "<group>"; };
-		41F7DC321E76641D00D3F497 /* ItemsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListTableViewCell.m; sourceTree = "<group>"; };
-		41F7DC381E766A5500D3F497 /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
-		41F7DC391E766A5500D3F497 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
-		41F7DC621E778EEE00D3F497 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
-		41F7DC631E778EEE00D3F497 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		41F7DC651E77C74400D3F497 /* DrinkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrinkTableViewCell.h; path = ShoppingCart/DrinkTableViewCell.h; sourceTree = "<group>"; };
 		41F7DC661E77C74400D3F497 /* DrinkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrinkTableViewCell.m; path = ShoppingCart/DrinkTableViewCell.m; sourceTree = "<group>"; };
 		41F7DC681E77C75E00D3F497 /* DrinkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrinkTableViewController.h; path = ShoppingCart/DrinkTableViewController.h; sourceTree = "<group>"; };
@@ -111,54 +99,49 @@
 		410AB6981E7E128000E2563B /* NIB */ = {
 			isa = PBXGroup;
 			children = (
-				410AB6A51E7E43AB00E2563B /* ViewController */,
-				410AB6A91E82192200E2563B /* CustomUITableViewCell.h */,
-				410AB6AA1E82192200E2563B /* CustomUITableViewCell.m */,
+				410AB68E1E7E0B6100E2563B /* Header.xib */,
+				410AB6AB1E82192200E2563B /* Footer.xib */,
 				410AB6AC1E82192200E2563B /* FooterUIView.h */,
 				410AB6AD1E82192200E2563B /* FooterUIView.m */,
 				410AB6AE1E82192200E2563B /* HeaderUIView.h */,
 				410AB6AF1E82192200E2563B /* HeaderUIView.m */,
-				410AB6B01E82192200E2563B /* Item.h */,
-				410AB6B11E82192200E2563B /* Item.m */,
 				410AB6C71E821CF700E2563B /* Assets.xcassets */,
 				410AB6BB1E8219E800E2563B /* Base.lproj */,
-				410AB68E1E7E0B6100E2563B /* Header.xib */,
-				410AB6AB1E82192200E2563B /* Footer.xib */,
 			);
 			name = NIB;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		410AB6A51E7E43AB00E2563B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				410AB6C91E821DA800E2563B /* MyTabBarController.h */,
-				410AB6CA1E821DA800E2563B /* MyTabBarController.m */,
 				410AB6A21E7E391500E2563B /* MainViewController.h */,
 				410AB6A31E7E391500E2563B /* MainViewController.m */,
 				410AB6991E7E1CEE00E2563B /* ItemListUIViewController.h */,
 				410AB69A1E7E1CEE00E2563B /* ItemListUIViewController.m */,
-				41F7DC681E77C75E00D3F497 /* DrinkTableViewController.h */,
-				41F7DC691E77C75E00D3F497 /* DrinkTableViewController.m */,
-				41F7DC651E77C74400D3F497 /* DrinkTableViewCell.h */,
-				41F7DC661E77C74400D3F497 /* DrinkTableViewCell.m */,
+				410AB6A91E82192200E2563B /* CustomUITableViewCell.h */,
+				410AB6AA1E82192200E2563B /* CustomUITableViewCell.m */,
 				41F7DC6B1E77D32A00D3F497 /* ClothTableViewController.h */,
 				41F7DC6C1E77D32A00D3F497 /* ClothTableViewController.m */,
 				41F7DC6E1E77D33C00D3F497 /* ClothTableViewCell.h */,
 				41F7DC6F1E77D33C00D3F497 /* ClothTableViewCell.m */,
+				41F7DC681E77C75E00D3F497 /* DrinkTableViewController.h */,
+				41F7DC691E77C75E00D3F497 /* DrinkTableViewController.m */,
+				41F7DC651E77C74400D3F497 /* DrinkTableViewCell.h */,
+				41F7DC661E77C74400D3F497 /* DrinkTableViewCell.m */,
 				41F7DC741E77D36A00D3F497 /* FoodTableViewController.h */,
 				41F7DC751E77D36A00D3F497 /* FoodTableViewController.m */,
 				41F7DC711E77D34900D3F497 /* FoodTableViewCell.h */,
 				41F7DC721E77D34900D3F497 /* FoodTableViewCell.m */,
 			);
 			name = ViewController;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		41A331771E6FB71500CCD409 = {
 			isa = PBXGroup;
 			children = (
-				410AB6981E7E128000E2563B /* NIB */,
 				41A331821E6FB71500CCD409 /* TabBarShoppingCart */,
-				41A331811E6FB71500CCD409 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,18 +151,23 @@
 				41A331801E6FB71500CCD409 /* TabBarShoppingCart.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		41A331821E6FB71500CCD409 /* TabBarShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				410AB6C91E821DA800E2563B /* MyTabBarController.h */,
+				410AB6CA1E821DA800E2563B /* MyTabBarController.m */,
+				410AB6981E7E128000E2563B /* NIB */,
+				410AB6A51E7E43AB00E2563B /* ViewController */,
 				41A3318C1E6FB71500CCD409 /* Main.storyboard */,
-				41F7DC341E76642C00D3F497 /* TableView */,
 				41A331861E6FB71500CCD409 /* AppDelegate.h */,
 				41A331871E6FB71500CCD409 /* AppDelegate.m */,
 				41A331911E6FB71500CCD409 /* LaunchScreen.storyboard */,
 				41A331941E6FB71500CCD409 /* Info.plist */,
 				41A331AC1E6FC28D00CCD409 /* Product */,
+				41A331811E6FB71500CCD409 /* Products */,
 				41A331831E6FB71500CCD409 /* Supporting Files */,
 			);
 			name = TabBarShoppingCart;
@@ -211,19 +199,6 @@
 				41A3319F1E6FB79800CCD409 /* Food.m */,
 			);
 			name = Product;
-			sourceTree = "<group>";
-		};
-		41F7DC341E76642C00D3F497 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				41F7DC621E778EEE00D3F497 /* MainTableViewCell.h */,
-				41F7DC631E778EEE00D3F497 /* MainTableViewCell.m */,
-				41F7DC381E766A5500D3F497 /* ItemListViewController.h */,
-				41F7DC391E766A5500D3F497 /* ItemListViewController.m */,
-				41F7DC311E76641D00D3F497 /* ItemsListTableViewCell.h */,
-				41F7DC321E76641D00D3F497 /* ItemsListTableViewCell.m */,
-			);
-			name = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,15 +287,11 @@
 				41F7DC671E77C74400D3F497 /* DrinkTableViewCell.m in Sources */,
 				41A331A91E6FB79800CCD409 /* Material.m in Sources */,
 				41A331A71E6FB79800CCD409 /* Drink.m in Sources */,
-				410AB6B81E82192200E2563B /* Item.m in Sources */,
 				41A331A81E6FB79800CCD409 /* Food.m in Sources */,
-				41F7DC331E76641D00D3F497 /* ItemsListTableViewCell.m in Sources */,
-				41F7DC641E778EEE00D3F497 /* MainTableViewCell.m in Sources */,
 				41F7DC701E77D33C00D3F497 /* ClothTableViewCell.m in Sources */,
 				41A331AB1E6FB79800CCD409 /* ShoppingCart.m in Sources */,
 				41A331AA1E6FB79800CCD409 /* Product.m in Sources */,
 				41A331881E6FB71500CCD409 /* AppDelegate.m in Sources */,
-				41F7DC3A1E766A5500D3F497 /* ItemListViewController.m in Sources */,
 				410AB6A41E7E391500E2563B /* MainViewController.m in Sources */,
 				41F7DC761E77D36A00D3F497 /* FoodTableViewController.m in Sources */,
 				410AB6B41E82192200E2563B /* CustomUITableViewCell.m in Sources */,

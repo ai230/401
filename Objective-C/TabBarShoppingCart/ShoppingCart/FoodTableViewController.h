@@ -28,16 +28,7 @@
 @property (strong, nonatomic) NSMutableArray<UITextField*>* cellTextFieldArray;
 
 @property (strong, nonatomic) Food* food;
-//@property (weak, nonatomic) UITextField *foodIDTextField;
-//@property (weak, nonatomic) UITextField *foodNameTextField;
-//@property (weak, nonatomic) UITextField *foodPriceTextField;
-//@property (weak, nonatomic) UITextField *foodMadeCountryTextField;
-//@property (weak, nonatomic) UITextField *foodSizeTextField;
-//@property (weak, nonatomic) UITextField *foodCalorieTextField;
-//@property (weak, nonatomic) UITextField *foodIngredientsTextField;
 
 - (IBAction)closeKeyBoardButton:(UIButton *)sender;
-//- (IBAction)addFoodButton:(UIButton *)sender;
-//- (IBAction)closeFoodButton:(UIButton *)sender;
 
 @end

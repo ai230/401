@@ -11,5 +11,6 @@
 @interface CustomUITableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *customImageView;
 @property (weak, nonatomic) IBOutlet UILabel *customLabel;
+@property (weak, nonatomic) IBOutlet UILabel *customPriceLabel;
 
 @end

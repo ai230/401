@@ -25,8 +25,8 @@
 
 - (void)showAmount
 {
-        float amount = [self.mainDelegate mainDidSelect];
-        self.totalAmountLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", amount]];
+    float amount = [self.mainDelegate mainDidSelect];
+    self.totalAmountLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", amount]];
 }
 
 @end

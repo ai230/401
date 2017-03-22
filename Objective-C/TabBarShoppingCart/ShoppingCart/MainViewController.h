@@ -7,19 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "Product.h"
-//#import "Drink.h"
-//#import "Food.h"
-//#import "Cloth.h"
-//#import "Material.h"
-//#import "ShoppingCart.h"
-//
-//#import "MainTableViewCell.h"
-//#import "ClothTableViewController.h"
-//#import "DrinkTableViewController.h"
-//#import "FoodTableViewController.h"
-//#import "ItemListViewController.h"
-//#import "MyTabBarContoller.h"
 
 @protocol MainDelegate
 @required
@@ -28,13 +15,10 @@
 @end
 
 @interface MainViewController : UIViewController
-////<ClothTVCDelegate, DrinkTVCDelegate, FoodTVCDelegate, itemListVCDelegate, MyTabBarControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
-
 @property (weak, nonatomic) id<MainDelegate> mainDelegate;
-//@property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
-//@property (strong, nonatomic) ShoppingCart * shoppingcart;
 
-//- (void)viewWillAppear:(BOOL)animated;
 - (void)showAmount;
+
 @end

@@ -39,8 +39,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //NSArray * foodTableViewIDArray = @[@"ID", @"Name", @"Price", @"Made in Country", @"Size", @"Calorie"];
-    //Step1 : Cell creation and Reuse
     FoodTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FoodTableViewID"];
     //every time you have to check!
     if(!cell)
@@ -48,14 +46,16 @@
         cell = [[FoodTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FoodTableViewID"];
     }
     //Step2 : Data Binding
+    cell.foodTextField.text = @"";
     cell.foodTextField.placeholder = self.tableViewIDArray[indexPath.row];
     self.cellTextFieldArray[indexPath.row] = cell.foodTextField;
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 75;
 }
 
 - (IBAction)closeKeyBoardButton:(UIButton *)sender {
@@ -63,14 +63,10 @@
 }
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    
     CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
-    
     HeaderUIView* headerView = [[HeaderUIView alloc] initWithFrame:frame];
-    
     headerView.headerImageView.image = [UIImage imageNamed:@"food"];
-    
-    headerView.contentView.backgroundColor = [UIColor lightGrayColor];
+    //headerView.contentView.backgroundColor = [UIColor lightGrayColor];
     
     return headerView;
 }
@@ -94,7 +90,7 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 100;
+    return 80;
 }
 
 - (IBAction)closeDrinkButton:(UIButton *)sender {
@@ -139,12 +135,8 @@
         }
         //delegate call method
         [self.foodTVCDelegate foodDidCreate:self.food];
-        //Close this screen
-        [self.navigationController popViewControllerAnimated:YES];
+        //When add button is plessed input data in the text field will be deleted
+        [self.foodTableView reloadData];
     }
-
-//- (IBAction)closeFoodButton:(UIButton *)sender {
-//     [self.navigationController popViewControllerAnimated:YES];
-//}
 }
 @end

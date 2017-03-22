@@ -26,17 +26,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *drinkTableView;
 @property (strong, nonatomic) NSArray * tableViewIDArray;
 @property (strong, nonatomic) NSMutableArray<UITextField*>* cellTextFieldArray;
-
 @property (strong, nonatomic) Drink * drink;
-//@property (weak, nonatomic) UITextField *drinkIDTextField;
-//@property (weak, nonatomic) UITextField *drinkNameTextField;
-//@property (weak, nonatomic) UITextField *drinkPriceTextField;
-//@property (weak, nonatomic) UITextField *drinkMadeCountryTextField;
-//@property (weak, nonatomic) UITextField *drinkSizeTextField;
-//@property (weak, nonatomic) UITextField *drinkDietTextField;
-
-//- (IBAction)closeKeyBoardButton:(UIButton *)sender;
-//- (IBAction)addDrinkButton:(UIButton *)sender;
-//- (IBAction)closeDrinkButton:(UIButton *)sender;
 
 @end

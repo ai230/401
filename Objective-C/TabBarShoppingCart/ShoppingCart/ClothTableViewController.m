@@ -49,27 +49,24 @@
         cell = [[ClothTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ClothTableViewID"];
     }
     //Step2 : Data Binding
+    cell.clothTextField.text = @"";
     cell.clothTextField.placeholder = self.tableViewIDArray[indexPath.row];
-    //TODO
     self.cellTextFieldArray[indexPath.row] = cell.clothTextField;
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 75;
 }
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    
     CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
-    
     HeaderUIView* headerView = [[HeaderUIView alloc] initWithFrame:frame];
-    
     headerView.headerImageView.image = [UIImage imageNamed:@"cloth"];
-    
-    headerView.headerTitleLabel.text = @"Cloth";
-    headerView.contentView.backgroundColor = [UIColor lightGrayColor];
+    //headerView.headerTitleLabel.text = @"Cloth";
+    //headerView.contentView.backgroundColor = [UIColor lightGrayColor];
     
     return headerView;
 }
@@ -94,7 +91,7 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 100;
+    return 80;
 }
 - (IBAction)closeKeyBoardButton:(UIButton *)sender {
     [self.view endEditing:YES];
@@ -137,19 +134,14 @@
             {
                 NSInteger materialCode = [materialCodeArray[i] integerValue];
                 NSString * materialName = materialNameArray[i];
-                
                 Material * material = [[Material alloc]initWithMaterialCode:materialCode materialName:materialName];
                 [self.clothMaterialArray addObject:material];
             }
             self.cloth.material = self.clothMaterialArray;
-            [self.clothTVCDelegate clothDidCreate:self.cloth];
-            
-            //Go back to main screen (push and pop)
-            [self.navigationController popViewControllerAnimated:YES];
         }
+        [self.clothTVCDelegate clothDidCreate:self.cloth];
+        //When add button is plessed input data in the text field will be deleted
+        [self.clothTableView reloadData];
     }
-//- (IBAction)closeClothButton:(UIButton *)sender {
-//     [self.navigationController popViewControllerAnimated:YES];
-//}
 }
 @end

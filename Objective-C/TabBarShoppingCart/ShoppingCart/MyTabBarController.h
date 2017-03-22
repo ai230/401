@@ -20,5 +20,4 @@
 @interface MyTabBarContoller : UITabBarController<UITabBarControllerDelegate,ClothTVCDelegate,DrinkTVCDelegate,FoodTVCDelegate,MainDelegate,itemListVCDelegate>
 
 @property (strong, nonatomic) ShoppingCart * shoppingcart;
-//@property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
 @end

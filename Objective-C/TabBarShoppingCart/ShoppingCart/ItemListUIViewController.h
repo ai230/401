@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Item.h"
 #import "CustomUITableViewCell.h"
 #import "HeaderUIView.h"
 #import "FooterUIView.h"
@@ -30,13 +29,9 @@
 @interface ItemListUIViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *itemListTableView;
-//@property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
-//@property (strong, nonatomic) NSMutableArray<Product*>* drinkArray;
-//@property (strong, nonatomic) NSMutableArray<Product*>* foodArray;
-//@property (strong, nonatomic) NSMutableArray<Product*>* clothArray;
-
 @property (strong, nonatomic) NSMutableArray<Product*>* productItemsArray;
 @property (weak, nonatomic) id<itemListVCDelegate> itemListVCDelegate;
 
 -(void)listDidSelect;
+
 @end

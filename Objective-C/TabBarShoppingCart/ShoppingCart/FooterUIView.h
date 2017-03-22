@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "DrinkTableViewController.h"
 
 @protocol FooterDelegate
-
 @required
 - (void)buttonWasPressed;
 @optional
@@ -19,11 +17,8 @@
 @interface FooterUIView : UIView
 
 @property (weak, nonatomic) id<FooterDelegate> FooterDelegate;
-
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 
 - (IBAction)doneButton:(id)sender;
-
-- (IBAction)cancelButton:(id)sender;
 
 @end

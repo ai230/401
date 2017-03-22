@@ -22,17 +22,14 @@
     self.itemListTableView.delegate = self;
     self.itemListTableView.dataSource = self;
     
-    self.productItemsArray = [[NSMutableArray alloc]init];
-    //self.productItemsArray = [self.itemListVCDelegate itemListDidCreate];
-    //[self fakeData];
+    self.productItemsArray = [[NSMutableArray<Product*> alloc]init];
+    
 }
-
 
 -(void)listDidSelect
 {
-    self.productItemsArray = [[NSMutableArray<Product*> alloc]init];
     self.productItemsArray = [self.itemListVCDelegate itemListDidCreate];
-    //self.totalAmountLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%.2f", amount]];
+    [self.itemListTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,10 +58,20 @@
     
     Product* p = [self.productItemsArray objectAtIndex:indexPath.row];
     
-    //cell.customImageView.image = [UIImage imageNamed:p.imageName];
-    
+    if([p isMemberOfClass:[Cloth class]])
+    {
+        cell.customImageView.image = [UIImage imageNamed:@"cloth"];
+    }
+    else if([p isMemberOfClass:[Drink class]])
+    {
+        cell.customImageView.image = [UIImage imageNamed:@"drink"];
+    }
+    else if([p isMemberOfClass:[Food class]])
+    {
+        cell.customImageView.image = [UIImage imageNamed:@"food"];
+    }
     cell.customLabel.text = p.productName;
-    
+    cell.customPriceLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%0.2f", p.productPrice]];
     return cell;
 }
 
