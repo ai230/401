@@ -10,6 +10,7 @@
 #import "CustomUITableViewCell.h"
 #import "HeaderUIView.h"
 #import "FooterUIView.h"
+#import "Footer2UIView.h"
 
 #import "Product.h"
 #import "Drink.h"
@@ -26,7 +27,7 @@
 @optional
 @end
 
-@interface ItemListUIViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ItemListUIViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,Footer2Delegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *itemListTableView;
 @property (strong, nonatomic) NSMutableArray<Product*>* productItemsArray;

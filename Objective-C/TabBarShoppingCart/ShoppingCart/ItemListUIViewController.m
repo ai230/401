@@ -75,7 +75,7 @@
     return cell;
 }
 
-
+//Header
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
@@ -96,6 +96,22 @@
     return 80;
 }
 
+////Footer
+//-(UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+//{
+//    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
+//    FooterUIView* footerView = [[FooterUIView alloc] initWithFrame:frame];
+//    //footerView.contentView.backgroundColor = [UIColor orangeColor];
+//    footerView.FooterDelegate = self;
+//    
+//    return footerView;
+//    
+//}
+//
+//-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    return 75;
+//}
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100;

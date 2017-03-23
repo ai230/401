@@ -17,6 +17,8 @@
 		410AB6BD1E8219E800E2563B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6BB1E8219E800E2563B /* Base.lproj */; };
 		410AB6C81E821CF700E2563B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6C71E821CF700E2563B /* Assets.xcassets */; };
 		410AB6CB1E821DA800E2563B /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6CA1E821DA800E2563B /* MyTabBarController.m */; };
+		410AB6CD1E8344B800E2563B /* Footer2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410AB6CC1E8344B800E2563B /* Footer2.xib */; };
+		410AB6D01E83452C00E2563B /* Footer2UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410AB6CF1E83452C00E2563B /* Footer2UIView.m */; };
 		41A331851E6FB71500CCD409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331841E6FB71500CCD409 /* main.m */; };
 		41A331881E6FB71500CCD409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A331871E6FB71500CCD409 /* AppDelegate.m */; };
 		41A3318E1E6FB71500CCD409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A3318C1E6FB71500CCD409 /* Main.storyboard */; };
@@ -52,6 +54,9 @@
 		410AB6C71E821CF700E2563B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShoppingCart/Assets.xcassets; sourceTree = "<group>"; };
 		410AB6C91E821DA800E2563B /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
 		410AB6CA1E821DA800E2563B /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
+		410AB6CC1E8344B800E2563B /* Footer2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer2.xib; sourceTree = "<group>"; };
+		410AB6CE1E83452C00E2563B /* Footer2UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Footer2UIView.h; sourceTree = "<group>"; };
+		410AB6CF1E83452C00E2563B /* Footer2UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Footer2UIView.m; sourceTree = "<group>"; };
 		41A331801E6FB71500CCD409 /* TabBarShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A331841E6FB71500CCD409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41A331861E6FB71500CCD409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,10 +106,13 @@
 			children = (
 				410AB68E1E7E0B6100E2563B /* Header.xib */,
 				410AB6AB1E82192200E2563B /* Footer.xib */,
-				410AB6AC1E82192200E2563B /* FooterUIView.h */,
+				410AB6CC1E8344B800E2563B /* Footer2.xib */,
 				410AB6AD1E82192200E2563B /* FooterUIView.m */,
+				410AB6AC1E82192200E2563B /* FooterUIView.h */,
 				410AB6AE1E82192200E2563B /* HeaderUIView.h */,
 				410AB6AF1E82192200E2563B /* HeaderUIView.m */,
+				410AB6CE1E83452C00E2563B /* Footer2UIView.h */,
+				410AB6CF1E83452C00E2563B /* Footer2UIView.m */,
 				410AB6C71E821CF700E2563B /* Assets.xcassets */,
 				410AB6BB1E8219E800E2563B /* Base.lproj */,
 			);
@@ -260,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410AB6CD1E8344B800E2563B /* Footer2.xib in Resources */,
 				410AB6B51E82192200E2563B /* Footer.xib in Resources */,
 				410AB6BD1E8219E800E2563B /* Base.lproj in Resources */,
 				410AB68F1E7E0B6100E2563B /* Header.xib in Resources */,
@@ -290,6 +299,7 @@
 				41A331A81E6FB79800CCD409 /* Food.m in Sources */,
 				41F7DC701E77D33C00D3F497 /* ClothTableViewCell.m in Sources */,
 				41A331AB1E6FB79800CCD409 /* ShoppingCart.m in Sources */,
+				410AB6D01E83452C00E2563B /* Footer2UIView.m in Sources */,
 				41A331AA1E6FB79800CCD409 /* Product.m in Sources */,
 				41A331881E6FB71500CCD409 /* AppDelegate.m in Sources */,
 				410AB6A41E7E391500E2563B /* MainViewController.m in Sources */,
