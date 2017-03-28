@@ -21,6 +21,9 @@
     
     Food * food = [[Food alloc]init];
     self.food = food;
+    
+    self.foodTableViewIDArray = @[@"ID", @"Name", @"Price", @"Made in Country", @"Size", @"Calorie"];
+    self.cellTextFieldArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,7 +40,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSArray * foodTableViewIDArray = @[@"ID", @"Name", @"Price", @"Made in Country", @"Size", @"Calorie"];
+
     //Step1 : Cell creation and Reuse
     FoodTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FoodTableViewID"];
     //every time you have to check!
@@ -46,8 +49,8 @@
         cell = [[FoodTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FoodTableViewID"];
     }
     //Step2 : Data Binding
-    cell.foodTextField.placeholder = foodTableViewIDArray[indexPath.row];
-    self.foodIDTextField = cell.foodTextField;
+    cell.foodTextField.placeholder = self.foodTableViewIDArray[indexPath.row];
+    self.cellTextFieldArray[indexPath.row] = cell.foodTextField;
     return cell;
 }
 
@@ -61,22 +64,47 @@
 }
 
 - (IBAction)addFoodButton:(UIButton *)sender {
-    if(![self.foodNameTextField.text isEqualToString: @""])
+    
+    if(![self.cellTextFieldArray[1].text isEqualToString: @""])
     {
-        self.food.productID = self.foodIDTextField.text.integerValue;
-        self.food.productName = self.foodNameTextField.text;
-        self.food.productPrice = self.foodPriceTextField.text.integerValue;
-        self.food.productMadeCountry = self.foodMadeCountryTextField.text;
-        self.food.productSize = self.foodSizeTextField.text.integerValue;
-        self.food.foodCalorie = self.foodCalorieTextField.text.integerValue;
-        self.food.foodIngredients = [self.foodIngredientsTextField.text componentsSeparatedByString:@","];
-        self.food.productPrice = [self.food calculatePraicefromSize];
-        
-        //delegate call method
-        [self.foodTVCDelegate foodDidCreate:self.food];
-        //Close this screen
-        [self.navigationController popViewControllerAnimated:YES];
+        for(int i=0; i<self.foodTableViewIDArray.count; i++)
+        {
+            if(i == 0)
+            {
+                self.food.productID = self.cellTextFieldArray[i].text.integerValue;
+            }
+            else if(i == 1)
+            {
+                self.food.productName = self.cellTextFieldArray[i].text;
+            }
+            else if(i == 2)
+            {
+                self.food.productPrice = self.cellTextFieldArray[i].text.floatValue;
+            }
+            else if(i == 3)
+            {
+                self.food.productMadeCountry = self.cellTextFieldArray[i].text;
+            }
+            else if(i == 4)
+            {
+                self.food.productMadeCountry = self.cellTextFieldArray[i].text;
+            }
+            else if(i == 5)
+            {
+                self.food.productSize = self.cellTextFieldArray[i].text.integerValue;
+            }
+            else
+            {
+                self.food.foodCalorie = self.cellTextFieldArray[i].text.boolValue;
+            }
+        }
     }
+    self.food.productPrice = [self.food calculatePraicefromSize];
+    
+    //delegate call method
+    [self.foodTVCDelegate foodDidCreate:self.food];
+    //Close this screen
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)closeFoodButton:(UIButton *)sender {

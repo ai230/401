@@ -52,7 +52,6 @@
     }
     //Step2 : Data Binding
     cell.drinkTextField.placeholder = self.drinkTableViewIDArray[indexPath.row];
-    //TODO
     self.cellTextFieldArray[indexPath.row] = cell.drinkTextField;
     return cell;
 }
@@ -68,15 +67,13 @@
 
 - (IBAction)addDrinkButton:(UIButton *)sender {
     
-    if(![self.drinkNameTextField.text isEqualToString: @""])
+    if(![self.cellTextFieldArray[1].text isEqualToString: @""])
     {
         for(int i=0; i<self.drinkTableViewIDArray.count; i++)
         {
             if(i == 0)
             {
-                //self.drink.productID = self.cellTextFieldArray[i].text.integerValue;
                 self.drink.productID = self.cellTextFieldArray[i].text.integerValue;
-
             }
             else if(i == 1)
             {
@@ -103,12 +100,6 @@
                 self.drink.isDrinkDiet = self.cellTextFieldArray[i].text.boolValue;
             }
         }
-//        self.drink.productID = self.drinkIDTextField.text.integerValue;
-//        self.drink.productName = self.drinkNameTextField.text;
-//        self.drink.productPrice = self.drinkPriceTextField.text.floatValue;
-//        self.drink.productMadeCountry = self.drinkMadeCountryTextField.text;
-//        self.drink.productSize = self.drinkSizeTextField.text.integerValue;
-//        self.drink.isDrinkDiet = self.drinkDietTextField.text.boolValue;
         
         //Delegate call method
         [self.drinkTVCDelegate drinkDidCreate:self.drink];
