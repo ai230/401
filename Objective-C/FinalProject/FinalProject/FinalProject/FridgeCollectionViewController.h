@@ -19,8 +19,6 @@
 @interface FridgeCollectionViewController : UICollectionViewController<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *fridgeCollectionView;
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
 
 @property(weak,nonatomic)id<FridgeItemCVDelegate> fridgeItemCVDelegate;
 
