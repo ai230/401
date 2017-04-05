@@ -270,16 +270,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YNc-1F-j1n">
-                                            <rect key="frame" x="8" y="41" width="80" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="80" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="6g9-jq-rzL">
+                                            <rect key="frame" x="16" y="35" width="65" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <connections>
-                                    <outlet property="fridgeItemNameLabel" destination="YNc-1F-j1n" id="Xz1-zw-A2J"/>
+                                    <outlet property="foodImage" destination="6g9-jq-rzL" id="TPd-tw-2b7"/>
+                                    <outlet property="foodNameLabel" destination="YNc-1F-j1n" id="j4b-UG-Q6i"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

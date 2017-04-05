@@ -25,13 +25,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.productArray = [[NSMutableArray<Product*> alloc]init];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
     self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fridge"]];
 }
 
@@ -41,13 +34,11 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-//#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of items
     return self.productArray.count;
 }
 
@@ -57,31 +48,22 @@ static NSString * const reuseIdentifier = @"Cell";
 
     Product * product = [self.productArray objectAtIndex:indexPath.row];
     
-    UILabel *label = (UILabel *)[cell viewWithTag:1];
-    label.text = product.productName;
-    //[NSString stringWithFormat:@"ラベル%d-%d",indexPath.section,indexPath.row];
-    
-    //cell..text;
-    //= product.productName;
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:1];
+    nameLabel.text = product.productName;
+    UIImageView * foodImage = (UIImageView *)[cell viewWithTag:2];
+    foodImage.image = [UIImage imageNamed:@"apple"];
     return cell;
 }
-
-//#pragma mark <UICollectionViewDelegate>
-
 
  //Uncomment this method to specify if the specified item should be highlighted during tracking
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
 	return YES;
 }
 
-
-
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-
-
 
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,7 +75,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
 }
 
 

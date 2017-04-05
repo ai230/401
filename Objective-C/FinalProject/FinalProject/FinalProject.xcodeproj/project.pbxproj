@@ -23,6 +23,8 @@
 		41A34DA31E8A119A0059C342 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A34DA21E8A119A0059C342 /* MyTabBarViewController.m */; };
 		41A34DA81E8C817B0059C342 /* FridgeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A34DA71E8C817B0059C342 /* FridgeCollectionViewController.m */; };
 		41A34DAC1E8C89AB0059C342 /* FridgeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A34DAB1E8C89AB0059C342 /* FridgeCollectionViewCell.m */; };
+		41A34DAE1E9238BA0059C342 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A34DAD1E9238BA0059C342 /* Header.xib */; };
+		41A34DB11E9239CB0059C342 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A34DB01E9239CB0059C342 /* HeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,9 @@
 		41A34DA71E8C817B0059C342 /* FridgeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridgeCollectionViewController.m; sourceTree = "<group>"; };
 		41A34DAA1E8C89AB0059C342 /* FridgeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FridgeCollectionViewCell.h; sourceTree = "<group>"; };
 		41A34DAB1E8C89AB0059C342 /* FridgeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridgeCollectionViewCell.m; sourceTree = "<group>"; };
+		41A34DAD1E9238BA0059C342 /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		41A34DAF1E9239CB0059C342 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		41A34DB01E9239CB0059C342 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 		410AB6DC1E83C37E00E2563B /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				41A34DB21E9239DE0059C342 /* Header */,
 				410AB6E01E83C37E00E2563B /* AppDelegate.h */,
 				410AB6E11E83C37E00E2563B /* AppDelegate.m */,
 				410AB6E31E83C37E00E2563B /* ViewController.h */,
@@ -169,6 +175,16 @@
 			name = ItemsCollectionViewController;
 			sourceTree = "<group>";
 		};
+		41A34DB21E9239DE0059C342 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				41A34DAD1E9238BA0059C342 /* Header.xib */,
+				41A34DAF1E9239CB0059C342 /* HeaderView.h */,
+				41A34DB01E9239CB0059C342 /* HeaderView.m */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A34DAE1E9238BA0059C342 /* Header.xib in Resources */,
 				410AB6ED1E83C37E00E2563B /* LaunchScreen.storyboard in Resources */,
 				410AB6EA1E83C37E00E2563B /* Assets.xcassets in Resources */,
 				410AB6E81E83C37E00E2563B /* Main.storyboard in Resources */,
@@ -248,6 +265,7 @@
 				41196C8E1E89C3D10085A638 /* Food.m in Sources */,
 				41A34DA31E8A119A0059C342 /* MyTabBarViewController.m in Sources */,
 				41A34D9D1E8A0C8D0059C342 /* FridgeItemsTableViewController.m in Sources */,
+				41A34DB11E9239CB0059C342 /* HeaderView.m in Sources */,
 				41196C911E89C3DB0085A638 /* Drink.m in Sources */,
 				410AB6E51E83C37E00E2563B /* ViewController.m in Sources */,
 				41196C8A1E89C15F0085A638 /* Product.m in Sources */,
